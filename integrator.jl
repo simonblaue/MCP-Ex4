@@ -22,7 +22,7 @@ function jacobi(ϕ0)
   ϵs_max = Any[]
   ϵs_av = Any[]
   while( maximum(ϵ(ϕ)) > 1e-3 && k<1e5)
-    ϕ_old = copy(ϕ)
+    ϕ_old = (ϕ)
     for i in 2:N-1
       for j in 2:N-1
         ϕ[i,j] = (ϕ_old[i+1,j] + ϕ_old[i-1,j] + ϕ_old[i,j+1] + ϕ_old[i,j-1])/4
