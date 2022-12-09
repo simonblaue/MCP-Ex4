@@ -6,8 +6,12 @@ function ϵ(ϕ)
 end;
 
 
-function laplace_inf_sum(x,y,terms) 
-  return  sum([400/(n*π) * sin(n*π*y/l) * ℯ^(-n*π*x) for n in 1:terms])
+function laplace_inf_sum(x,y,l,terms) 
+  summ = 0
+  for n in 1:2:2*terms
+    summ += 1/n * sin(n*π*y/l) * exp(-n*π*x)
+  end
+  return  400/π *summ
 end;
 
 
@@ -109,8 +113,9 @@ function FCTS(T0, Δt, Δx, λ, Nₜ, Nₓ)
   Teval[:,1] = copy(T)
 
   for i in 1:Nₜ
+    T_old = copy(T) 
     for j in 2:length(T)-1
-      T[j] = (1-2*a)*T[j] + a*(T[j-1]+T[j+1])  
+      T[j] = (1-2*a)*T_old[j] + a*(T_old[j-1]+T[j+1])  
     end
     Teval[:,i+1] = copy(T)
   end
