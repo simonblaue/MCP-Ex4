@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber template"] 0 "template.bcf" "template.bbl" "template" 0 -1
-  "template.bcf" 1670601779 106889 01d33ab5362460ee985679f3761beafe "pdflatex"
+["biber template"] 1670604438 "template.bcf" "template.bbl" "template" 1670604467 0
+  "template.bcf" 1670604467 106889 01d33ab5362460ee985679f3761beafe "pdflatex"
   (generated)
   "template.bbl"
   "template.blg"
   (rewritten before read)
-["pdflatex"] 1670601778 "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" "template.pdf" "template" 1670601779 2
+["pdflatex"] 1670604466 "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" "template.pdf" "template" 1670604467 0
   "../saves/av_errors_SOR_comp.pdf" 1670599753 28468 6d20f95ea0530ed6adaf5bcab7a3ed0e ""
   "../saves/av_errors_comp.pdf" 1670599753 31238 501ccba820df7925293495771b0f0893 ""
   "../saves/broken_SOR_error.pdf" 1670600488 426118 793dd233f356729b809204e79b624594 ""
@@ -16,7 +16,13 @@
   "../saves/max_errors_SOR_comp.pdf" 1670599753 24354 06508750ae5b87880acd1c26154d9fa1 ""
   "../saves/max_errors_comp.pdf" 1670599753 16322 757eb66553ba7036c8487de91e510f31 ""
   "../saves/number_of_convergence_steps.pdf" 1670599753 17778 73f14c3d0af6dae0f3e5df6382fb4edb ""
-  "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" 1670601777 4781 7f0589770795f769df6602287dc7f6bd ""
+  "../saves_t2/error_comp.pdf" 1670604400 42624 ca21219c138e6131e8a6193707e39760 ""
+  "../saves_t2/error_comp_be_cn.pdf" 1670603152 51832 98d1ef59bb4a2144706628aa8cf91900 ""
+  "../saves_t2/error_comp_be_cn_df.pdf" 1670604400 20239 3f48809cf2ae30d217b36332722726bc ""
+  "../saves_t2/rod_FTCS.pdf" 1670604343 90547 c1e24354d4b07c041d073ad6df046e2d ""
+  "../saves_t2/rod_crank-nic.pdf" 1670604367 92553 0ed8944db177beec4f6ca24589737fc5 ""
+  "../saves_t2/rod_dufort_frankel.pdf" 1670604383 90999 88d54c94aa7c19b8452eb3f9b79c317f ""
+  "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" 1670604466 5875 b55e07d626177c725af2a6b858328d4a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc" 1645915288 3163 21e525d33df21a14ca1957bee2a40288 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc" 1645915288 3042 89ca0791973606a1e548c92a615cb3e0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_yelf2i.enc" 1645915288 3636 d01545aefb566252883ecd2da6792d5e ""
@@ -148,10 +154,10 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1670364029 3063377 59dbcd150b7bd1208c74dca8334632c4 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "CSUniSchoolLabReport.cls" 1670504040 3270 a36ad0b3cd5083bff8b3dd61d6d439b6 ""
-  "template.aux" 1670601779 2163 f00ec65b19e58932ccf8d2f09c6ef08b "pdflatex"
-  "template.bbl" 0 -1 0 "biber template"
-  "template.run.xml" 1670601779 2335 1c7ee3463e38db6019d440a00b980875 "pdflatex"
-  "template.tex" 1670601777 4781 7f0589770795f769df6602287dc7f6bd ""
+  "template.aux" 1670604467 2958 739d8ddc59a6c5b559657a109ce84e9a "pdflatex"
+  "template.bbl" 1670604440 466 ee04f40f768daeed26442158e95aba61 "biber template"
+  "template.run.xml" 1670604467 2335 5af8e57be58b3a688eb0696dfbec500e "pdflatex"
+  "template.tex" 1670604466 5875 b55e07d626177c725af2a6b858328d4a ""
   (generated)
   "template.aux"
   "template.bcf"

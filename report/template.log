@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  9 DEC 2022 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  9 DEC 2022 17:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -782,9 +782,8 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `template.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'template.bbl' not found.
-
-No file template.bbl.
+Package biblatex Info: ... file 'template.bbl' found.
+ (./template.bbl)
 Package biblatex Info: Reference section=0 on input line 34.
 Package biblatex Info: Reference segment=0 on input line 34.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
@@ -792,7 +791,7 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 11.52008pt on input line 36.
 LaTeX Font Info:    Trying to load font information for OT1+XCharter-TLF on input line 36.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/xcharter/OT1XCharter-TLF.fd
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/xcharter/OT1XCharter-TLF.fd
 File: OT1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for OT1/XCharter-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
@@ -884,49 +883,60 @@ File: ../saves/difference_laplace_heatmap.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../saves/difference_laplace_heatmap.pdf  used on input line 132.
 (pdftex.def)             Requested size: 196.326pt x 130.88416pt.
  [3 <../saves/broken_SOR_error.pdf> <../saves/comp_lapplace_series_heatmap.pdf>]
-
-/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex:142: LaTeX Error: File `../saves_t2/' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.142 ...egraphics[width=\textwidth]{../saves_t2/}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[4 <../saves/comp_laplace_heatmap.pdf> <../saves/difference_laplace_heatmap.pdf>] (./template.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                template
-(biblatex)                and rerun LaTeX afterwards.
-
+<../saves_t2/rod_FTCS.pdf, id=37, 527.08919pt x 376.52669pt>
+File: ../saves_t2/rod_FTCS.pdf Graphic file (type pdf)
+<use ../saves_t2/rod_FTCS.pdf>
+Package pdftex.def Info: ../saves_t2/rod_FTCS.pdf  used on input line 145.
+(pdftex.def)             Requested size: 160.33307pt x 114.53308pt.
+<../saves_t2/rod_crank-nic.pdf, id=38, 527.08919pt x 376.52669pt>
+File: ../saves_t2/rod_crank-nic.pdf Graphic file (type pdf)
+<use ../saves_t2/rod_crank-nic.pdf>
+Package pdftex.def Info: ../saves_t2/rod_crank-nic.pdf  used on input line 149.
+(pdftex.def)             Requested size: 160.33307pt x 114.53308pt.
+File: ../saves_t2/rod_crank-nic.pdf Graphic file (type pdf)
+<use ../saves_t2/rod_crank-nic.pdf>
+Package pdftex.def Info: ../saves_t2/rod_crank-nic.pdf  used on input line 153.
+(pdftex.def)             Requested size: 160.33307pt x 114.53308pt.
+<../saves_t2/rod_dufort_frankel.pdf, id=39, 527.08919pt x 376.52669pt>
+File: ../saves_t2/rod_dufort_frankel.pdf Graphic file (type pdf)
+<use ../saves_t2/rod_dufort_frankel.pdf>
+Package pdftex.def Info: ../saves_t2/rod_dufort_frankel.pdf  used on input line 157.
+(pdftex.def)             Requested size: 160.33307pt x 114.53308pt.
+ [4 <../saves/comp_laplace_heatmap.pdf> <../saves/difference_laplace_heatmap.pdf>]
+<../saves_t2/error_comp.pdf, id=45, 527.08919pt x 376.52669pt>
+File: ../saves_t2/error_comp.pdf Graphic file (type pdf)
+<use ../saves_t2/error_comp.pdf>
+Package pdftex.def Info: ../saves_t2/error_comp.pdf  used on input line 167.
+(pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
+ [5 <../saves_t2/rod_FTCS.pdf> <../saves_t2/rod_crank-nic.pdf> <../saves_t2/rod_dufort_frankel.pdf>]
+<../saves_t2/error_comp_be_cn.pdf, id=127, 527.08919pt x 376.52669pt>
+File: ../saves_t2/error_comp_be_cn.pdf Graphic file (type pdf)
+<use ../saves_t2/error_comp_be_cn.pdf>
+Package pdftex.def Info: ../saves_t2/error_comp_be_cn.pdf  used on input line 174.
+(pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
+<../saves_t2/error_comp_be_cn_df.pdf, id=128, 527.08919pt x 376.52669pt>
+File: ../saves_t2/error_comp_be_cn_df.pdf Graphic file (type pdf)
+<use ../saves_t2/error_comp_be_cn_df.pdf>
+Package pdftex.def Info: ../saves_t2/error_comp_be_cn_df.pdf  used on input line 182.
+(pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
+ [6 <../saves_t2/error_comp.pdf> <../saves_t2/error_comp_be_cn.pdf>] [7 <../saves_t2/error_comp_be_cn_df.pdf>] (./template.aux)
 Package logreq Info: Writing requests to 'template.run.xml'.
 \openout1 = `template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  20669 strings out of 474968
- 418159 string characters out of 5776083
- 1133225 words of memory out of 5000000
- 41909 multiletter control sequences out of 15000+600000
+ 418959 string characters out of 5776083
+ 1133501 words of memory out of 5000000
+ 41915 multiletter control sequences out of 15000+600000
  559716 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,8n,91p,771b,850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_yelf2i.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on template.pdf (4 pages, 1121869 bytes).
+Output written on template.pdf (7 pages, 1494744 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 216 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
