@@ -23,7 +23,7 @@ x = 0:Δx:L
 a = λ*Δt/Δx^2
 T0 = sin.((π*x) / L)
 
-save_folder = "saves_t3"
+save_folder = "saves_t2"
 
 function task2a()
 
