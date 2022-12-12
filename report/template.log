@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  9 DEC 2022 23:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  12 DEC 2022 18:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -854,41 +854,41 @@ Package pdftex.def Info: ../saves/max_errors_SOR_comp.pdf  used on input line 93
  [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../saves/number_of_convergence_steps.pdf>]
-<../saves/broken_SOR_heatmap.pdf, id=18, 602.25pt x 401.5pt>
+<../saves/broken_SOR_heatmap.pdf, id=18, 527.08919pt x 376.52669pt>
 File: ../saves/broken_SOR_heatmap.pdf Graphic file (type pdf)
 <use ../saves/broken_SOR_heatmap.pdf>
 Package pdftex.def Info: ../saves/broken_SOR_heatmap.pdf  used on input line 105.
-(pdftex.def)             Requested size: 327.2067pt x 218.14844pt.
-<../saves/broken_SOR_error.pdf, id=19, 602.25pt x 401.5pt>
+(pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
+<../saves/broken_SOR_error.pdf, id=19, 527.08919pt x 376.52669pt>
 File: ../saves/broken_SOR_error.pdf Graphic file (type pdf)
 <use ../saves/broken_SOR_error.pdf>
 Package pdftex.def Info: ../saves/broken_SOR_error.pdf  used on input line 111.
-(pdftex.def)             Requested size: 327.2067pt x 218.14844pt.
+(pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
  [2 <../saves/av_errors_comp.pdf> <../saves/av_errors_SOR_comp.pdf> <../saves/max_errors_comp.pdf> <../saves/max_errors_SOR_comp.pdf> <../saves/broken_SOR_heatmap.pdf>]
-<../saves/comp_lapplace_series_heatmap.pdf, id=29, 527.08919pt x 376.52669pt>
+<../saves/comp_lapplace_series_heatmap.pdf, id=49, 527.08919pt x 376.52669pt>
 File: ../saves/comp_lapplace_series_heatmap.pdf Graphic file (type pdf)
 <use ../saves/comp_lapplace_series_heatmap.pdf>
 Package pdftex.def Info: ../saves/comp_lapplace_series_heatmap.pdf  used on input line 119.
 (pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
-<../saves/comp_laplace_heatmap.pdf, id=30, 803.0pt x 301.125pt>
+<../saves/comp_laplace_heatmap.pdf, id=50, 803.0pt x 301.125pt>
 File: ../saves/comp_laplace_heatmap.pdf Graphic file (type pdf)
 <use ../saves/comp_laplace_heatmap.pdf>
 Package pdftex.def Info: ../saves/comp_laplace_heatmap.pdf  used on input line 126.
 (pdftex.def)             Requested size: 327.2067pt x 122.7039pt.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 8.64006pt on input line 127.
-<../saves/difference_laplace_heatmap.pdf, id=31, 602.25pt x 401.5pt>
+<../saves/difference_laplace_heatmap.pdf, id=51, 602.25pt x 401.5pt>
 File: ../saves/difference_laplace_heatmap.pdf Graphic file (type pdf)
 <use ../saves/difference_laplace_heatmap.pdf>
 Package pdftex.def Info: ../saves/difference_laplace_heatmap.pdf  used on input line 132.
 (pdftex.def)             Requested size: 196.326pt x 130.88416pt.
  [3 <../saves/broken_SOR_error.pdf> <../saves/comp_lapplace_series_heatmap.pdf>]
-<../saves_t2/rod_FTCS.pdf, id=61, 527.08919pt x 376.52669pt>
+<../saves_t2/rod_FTCS.pdf, id=103, 527.08919pt x 376.52669pt>
 File: ../saves_t2/rod_FTCS.pdf Graphic file (type pdf)
 <use ../saves_t2/rod_FTCS.pdf>
 Package pdftex.def Info: ../saves_t2/rod_FTCS.pdf  used on input line 145.
 (pdftex.def)             Requested size: 160.33307pt x 114.53308pt.
-<../saves_t2/rod_crank-nic.pdf, id=62, 527.08919pt x 376.52669pt>
+<../saves_t2/rod_crank-nic.pdf, id=104, 527.08919pt x 376.52669pt>
 File: ../saves_t2/rod_crank-nic.pdf Graphic file (type pdf)
 <use ../saves_t2/rod_crank-nic.pdf>
 Package pdftex.def Info: ../saves_t2/rod_crank-nic.pdf  used on input line 149.
@@ -897,24 +897,24 @@ File: ../saves_t2/rod_crank-nic.pdf Graphic file (type pdf)
 <use ../saves_t2/rod_crank-nic.pdf>
 Package pdftex.def Info: ../saves_t2/rod_crank-nic.pdf  used on input line 153.
 (pdftex.def)             Requested size: 160.33307pt x 114.53308pt.
-<../saves_t2/rod_dufort_frankel.pdf, id=63, 527.08919pt x 376.52669pt>
+<../saves_t2/rod_dufort_frankel.pdf, id=105, 527.08919pt x 376.52669pt>
 File: ../saves_t2/rod_dufort_frankel.pdf Graphic file (type pdf)
 <use ../saves_t2/rod_dufort_frankel.pdf>
 Package pdftex.def Info: ../saves_t2/rod_dufort_frankel.pdf  used on input line 157.
 (pdftex.def)             Requested size: 160.33307pt x 114.53308pt.
  [4 <../saves/comp_laplace_heatmap.pdf> <../saves/difference_laplace_heatmap.pdf>]
-<../saves_t2/error_comp.pdf, id=69, 527.08919pt x 376.52669pt>
+<../saves_t2/error_comp.pdf, id=111, 527.08919pt x 376.52669pt>
 File: ../saves_t2/error_comp.pdf Graphic file (type pdf)
 <use ../saves_t2/error_comp.pdf>
 Package pdftex.def Info: ../saves_t2/error_comp.pdf  used on input line 167.
 (pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
  [5 <../saves_t2/rod_FTCS.pdf> <../saves_t2/rod_crank-nic.pdf> <../saves_t2/rod_dufort_frankel.pdf>]
-<../saves_t2/error_comp_be_cn.pdf, id=151, 527.08919pt x 376.52669pt>
+<../saves_t2/error_comp_be_cn.pdf, id=194, 527.08919pt x 376.52669pt>
 File: ../saves_t2/error_comp_be_cn.pdf Graphic file (type pdf)
 <use ../saves_t2/error_comp_be_cn.pdf>
 Package pdftex.def Info: ../saves_t2/error_comp_be_cn.pdf  used on input line 174.
 (pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
-<../saves_t2/error_comp_be_cn_df.pdf, id=152, 527.08919pt x 376.52669pt>
+<../saves_t2/error_comp_be_cn_df.pdf, id=195, 527.08919pt x 376.52669pt>
 File: ../saves_t2/error_comp_be_cn_df.pdf Graphic file (type pdf)
 <use ../saves_t2/error_comp_be_cn_df.pdf>
 Package pdftex.def Info: ../saves_t2/error_comp_be_cn_df.pdf  used on input line 182.
@@ -933,10 +933,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  86i,8n,91p,771b,850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_yelf2i.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on template.pdf (7 pages, 1426206 bytes).
+Output written on template.pdf (7 pages, 1070794 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
+ 282 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

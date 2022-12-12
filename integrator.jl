@@ -1,4 +1,3 @@
-
 ############### Task 1
 
 function ϵ(ϕ)
@@ -66,7 +65,7 @@ function SOR(ϕ0, ω)
   N = length(ϕ[:,1])
   ϵs_max = Any[]
   ϵs_av = Any[]
-  while( maximum(ϵ(ϕ)) > 1e-3 && k<1e5)
+  while( maximum(ϵ(ϕ)) > 1e-3 && k<5e4)
     for i in 2:N-1
       for j in 2:N-1
         ϕ[i,j] = (1-ω)*ϕ[i,j] + ω*(ϕ[i+1,j] + ϕ[i-1,j] + ϕ[i,j+1] + ϕ[i,j-1])/4
