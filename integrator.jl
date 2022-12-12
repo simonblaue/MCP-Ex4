@@ -112,9 +112,10 @@ function FCTS(T0, Δt, Δx, λ, Nₜ, Nₓ)
   Teval[:,1] = copy(T)
 
   for i in 1:Nₜ
-    T_old = copy(T) 
+    # T_old = copy(T) 
     for j in 2:length(T)-1
-      T[j] = (1-2*a)*T_old[j] + a*(T_old[j-1]+T[j+1])  
+      # T[j] = (1-2*a)*T_old[j] + a*(T_old[j-1]+T[j+1])
+      T[j] = (1-2*a)*T[j] + a*(T[j-1]+T[j+1])  
     end
     Teval[:,i+1] = copy(T)
   end
