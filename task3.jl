@@ -6,34 +6,42 @@ using PlotThemes
 using LinearAlgebra
 using SparseArrays
 
-plotlyjs();
+# plotlyjs();
 theme(:vibrant;)
+
+
+
+#############
+
+const ϵ = 0.2
+const μ = 0.1
+const Δx = 0.4
+const Δt = 0.1
+const L = 52
+
+const xs = 0:Δx:L
+
+const Nₓ = length(xs) 
+const Nₜ = 2000
+
+const t_end = Δt*Nₜ
 
 ###############
 
-function iterative()
-    #### Var declaration
+####### Iterative simulation ####
 
-    ϵ = 0.2
-    μ = 0.1
-    Δx = 0.4
-    Δt = 0.1
-    L = 52
-    xs = -Δx:Δx:L+Δx
-
-    Nₓ = length(xs) 
-    Nₜ = 2000
+function getGroundtate(xs)
 
     u₁ = [1/2*(1-tanh((x-25)/5)) for x in xs]
-    println(length(u₁))
-
     u₁[1] = 1
     u₁[2] = 1
     u₁[end] = 0
     u₁[end-1] = 0
 
+    return u₁
+end
 
-
+function getMatricies()
     A = Tridiagonal(fill(1,Nₓ-1), fill(1,Nₓ), fill(1,Nₓ-1))
     A[1,:] .= 0
     A[2,:] .= 0
@@ -62,28 +70,83 @@ function iterative()
     C[end,:] .= 0
     C[end-1,:] .= 0
 
-    #### Done init
+    return A, B, C
+    
+end
 
-    ### First step
+function firstStepMatricies(u₁, ϵ, μ, Δt, Δx, A, B, C)
 
     u₂ = u₁ - (ϵ/6 * Δt/Δx) * (A * u₁) .* (B * u₁) - (μ/2 * Δt/Δx^3) * (C * u₁) 
 
-    ## 
+    u₂[1] = 1
+    u₂[end] = 0
+    u₂[2] = u₁[2] - pref1 * (u₁[3]+u₁[2]+u₁[1]) * (u₁[3]-u₁[1] ) - pref2 * (u₁[4]+2*u₁[1]-2*u₁[3]-u₁[1])
+    u₂[end-1] = u₁[end-1] - pref1 * (u₁[end]+u₁[end-1]+u₁[end-2]) * (u₁[end]-u₁[end-2] ) - pref2 * (u₁[end]+2*u₁[end-2]-2*u₁[end]-u₁[end-3])
+
+    return u₂
+end
+
+function firstStep(u₁, ϵ, μ, Δt, Δx,Nₓ)
+    pref1 = ϵ/6 * Δt/Δx
+    pref2 = μ/2 * Δt/Δx^3
+
+    u₂ = zeros(Nₓ)
+    for j in 3:Nₓ-2
+        u₂[j] = u₁[j] - pref1 * (u₁[j+1]+u₁[j]+u₁[j-1]) * (u₁[j+1]-u₁[j-1] ) - pref2 * (u₁[j+2]+2*u₁[j-1]-2*u₁[j+1]-u₁[j-2])
+    end
+    
+    u₂[1] = 1
+    u₂[end] = 0
+    u₂[2] = u₁[2] - pref1 * (u₁[3]+u₁[2]+u₁[1]) * (u₁[3]-u₁[1] ) - pref2 * (u₁[4]+2*u₁[1]-2*u₁[3]-u₁[1])
+    u₂[end-1] = u₁[end-1] - pref1 * (u₁[end]+u₁[end-1]+u₁[end-2]) * (u₁[end]-u₁[end-2] ) - pref2 * (u₁[end]+2*u₁[end-2]-2*u₁[end]-u₁[end-3])
+
+    return  u₂
+end
+
+function matrixstep(uᵢ₋₁,uᵢ, ϵ, μ, Δt, Δx, A, B, C)
+
+    uᵢ₊₁ = uᵢ₋₁ - ϵ/3 * Δt/Δx * (A*uᵢ) .* (B*uᵢ) - μ * Δt/Δx^3 * (C*uᵢ)
+
+    uᵢ₊₁[1] = 1
+    uᵢ₊₁[end] = 0
+    uᵢ₊₁[2] = uᵢ₋₁[2] - pref1 * (uᵢ[3]+uᵢ[2]+uᵢ[1]) * (uᵢ[3]-uᵢ[1] ) - pref2 * (uᵢ[4]+2*uᵢ[1]-2*uᵢ[3]-uᵢ[1])
+    uᵢ₊₁[end-1] = uᵢ₋₁[end-1] - pref1 * (uᵢ[end]+uᵢ[end-1]+uᵢ[end-2]) * (uᵢ[end]-uᵢ[end-2] ) - pref2 * (uᵢ[end]+2*uᵢ[end-2]-2*uᵢ[end]-uᵢ[end-3])
+
+    return uᵢ₊₁
+end;
+
+function loopstep(uᵢ₋₁,uᵢ, ϵ, μ, Δt, Δx, Nₓ)
+
+    pref1 = ϵ/3 * Δt/Δx
+    pref2 = μ * Δt/Δx^3
+
+    uᵢ₊₁ = zeros(Nₓ)
+    for j in 3:Nₓ-2
+        uᵢ₊₁[j] = uᵢ₋₁[j] - pref1 * (uᵢ[j+1]+uᵢ[j]+uᵢ[j-1]) * (uᵢ[j+1]-uᵢ[j-1] ) - pref2 * (uᵢ[j+2]+2*uᵢ[j-1]-2*uᵢ[j+1]-uᵢ[j-2])
+    end
+    
+    uᵢ₊₁[1] = 1
+    uᵢ₊₁[end] = 0
+    uᵢ₊₁[2] = uᵢ₋₁[2] - pref1 * (uᵢ[3]+uᵢ[2]+uᵢ[1]) * (uᵢ[3]-uᵢ[1] ) - pref2 * (uᵢ[4]+2*uᵢ[1]-2*uᵢ[3]-uᵢ[1])
+    uᵢ₊₁[end-1] = uᵢ₋₁[end-1] - pref1 * (uᵢ[end]+uᵢ[end-1]+uᵢ[end-2]) * (uᵢ[end]-uᵢ[end-2] ) - pref2 * (uᵢ[end]+2*uᵢ[end-2]-2*uᵢ[end]-uᵢ[end-3])
+
+    return  uᵢ₊₁
+end
+
+function iterative()
+    
     u = zeros(Nₜ, Nₓ)
-    u[1,:] = u₁
-    u[2,:] = u₂
+
+    u[1,:] = getGroundtate(xs)
+    u[2,:] = firstStep(u[1,:], ϵ, μ, Δt, Δx,Nₓ)
 
     ### evolution of u
     for i in 2:Nₜ-1
-        u[i+1,:] = u[i-1,:] - (ϵ/3*Δt/Δx) * (A * u[i,:]) .* (B * u[i,:]) - (μ*Δt/Δx^3) * (C * u[i,:])
-        u[1] = 1
-        u[2] = 1
-        u[end] = 0
-        u[end-1] = 0
+       u[i+1,:] = loopstep(u[i-1,:],u[i,:], ϵ, μ, Δt, Δx, Nₓ)
     end;
 
     #####
-    return u[:,3:end-2]
+    return u
         
 end
 
@@ -104,22 +167,24 @@ function anim(u, name)
     n = size(u)[1]
     println(n)
     anim = @animate for i in 1:n
-        plot(u[i,:], label="t=$i")
-        # ylims!(0,2)
-        title!(name)
+        t = round(i*Δt)
+        plot(u[i,:], legend=false)
+        ylims!(0,2)
+        title!(L"t="*"$t")
         xlabel!("x")
         ylabel!("u")
     end
 
-    display(gif(anim, "anim/$name.gif", fps=30))
+    display(gif(anim, "anim/$name.gif", fps=40))
 
 end
 
-L = 52
-t_end = 200
+
+
 
 # @time u= analytical(L ,t_end)
 u = iterative()
+
 anim(u[1:10:end,:], "iterative")
 
 ;
