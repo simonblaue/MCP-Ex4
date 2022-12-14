@@ -63,7 +63,7 @@ function task1b(ϕ₀)
 
    data = [ϵs_max_j, ϵs_max_gs,res[1][3],res[3][3],res[4][3],res[5][3]]
    labels = ["Jacobi" "Gauss-Seidel" "SOR 0.5" "SOR 1.25" "SOR 1.5" "SOR 1.75"]
-   plot(data, xlim=(0,100), label=labels, title="Maximal error vs step")
+   plot(data, xlim=(0,100), label=labels, title="Maximal error vs step", xaxis=:log, yaxis=:log)
    savefig(string(save_folder, "/max_errors_comp.pdf"))
 
    data = [res[1][3],res[2][3],res[3][3],res[4][3],res[5][3],res[6][3]]
@@ -111,7 +111,7 @@ function task1c(ϕ₀)
 
 end
 
-task1a(xs,ys,l)
+# task1a(xs,ys,l)
 task1b(ϕ₀)
-task1c(ϕ₀)
+# task1c(ϕ₀)s
 

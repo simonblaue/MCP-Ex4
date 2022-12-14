@@ -21,12 +21,8 @@ function jacobi(ϕ0)
   ϵs_max = Any[]
   ϵs_av = Any[]
   while( maximum(ϵ(ϕ)) > 1e-3 && k<1e5)
-    ϕ_old = (ϕ)
-    for i in 2:N-1
-      for j in 2:N-1
-        ϕ[i,j] = (ϕ_old[i+1,j] + ϕ_old[i-1,j] + ϕ_old[i,j+1] + ϕ_old[i,j-1])/4
-      end
-    end
+    # ϕ_old = copy(ϕ)
+    ϕ = jacobi_step(ϕ)
     k += 1
     push!(ϵs_max, maximum(ϵ(ϕ)))
     push!(ϵs_av, mean(ϵ(ϕ)))
@@ -36,6 +32,18 @@ function jacobi(ϕ0)
   println("Stopped after $k steps with an error of $end_err ")
   return ϕ,k, ϵs_max, ϵs_av
 end;
+
+function jacobi_step(ϕ_old)
+  N = size(ϕ_old)[1]
+  ϕ = zeros(N,N)
+
+  for i in 2:N-1
+    for j in 2:N-1
+      ϕ[i,j] = (ϕ_old[i+1,j] + ϕ_old[i-1,j] + ϕ_old[i,j+1] + ϕ_old[i,j-1])/4
+    end
+  end
+  return ϕ
+end
 
 function gauß_seidel(ϕ0)
   ϕ = copy(ϕ0)
