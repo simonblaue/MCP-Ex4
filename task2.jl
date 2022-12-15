@@ -40,6 +40,40 @@ function fullFCTS()
     return Teval
 end;
 
+function fullEB()
+
+    A =Tridiagonal([-a for _ in 1:Nₓ-1], [(1+2*a) for _ in 1:Nₓ], [-a for _ in 1:Nₓ-1])
+    A[1,2] = 0;
+
+    Teval = euler_backward_all(T0, A ,Nₜ, Nₓ);
+    hmap_ftcs = heatmap(xs, ts.*Δt, Teval, ylabel="Time",xlabel="Rod domain", title="Rod evolution with Euler Backward")
+    savefig(save_folder*"/rod_euler_back.pdf")
+    display(hmap_ftcs)
+    return Teval
+end
+
+function fullCN()
+    a = λ*Δt/(2*Δx^2)
+    A =Tridiagonal([-a for _ in 1:Nₓ-1], [(1+2*a) for _ in 1:Nₓ], [-a for _ in 1:Nₓ-1])
+    A[1,2] = 0;
+    B =Tridiagonal([a for _ in 1:Nₓ-1], [(1-2*a) for _ in 1:Nₓ], [a for _ in 1:Nₓ-1])
+    B[1,2] = 0;
+    Teval = crank_nicolson_all(T0, A, B, Nₜ, Nₓ);
+    hmap_ftcs = heatmap(xs, ts.*Δt, Teval, ylabel="Time",xlabel="Rod domain", title="Rod evolution with Crank-Nicolson")
+    savefig(save_folder*"/rod_crank_nic.pdf")
+    display(hmap_ftcs)
+    return Teval
+end
+
+function fullDF()
+    a = 2*λ*Δt/(Δx^2)
+    Teval = dufort_frankel(T0, a, Nₜ, Nₓ);
+    hmap_ftcs = heatmap(xs, ts.*Δt, Teval, ylabel="Time",xlabel="Rod domain", title="Rod evolution with Dufort-Frankel")
+    savefig(save_folder*"/rod_dufort_frankel.pdf")
+    display(hmap_ftcs)
+    return Teval
+end
+
 function errorDevFCTS(disp=false)
 
     ϵ_Ts = Float64[]
@@ -180,5 +214,10 @@ end
 # @time err_cn = errorDevCN(d);
 # @time err_df = errorDevDF(d);
 
-composeErrors(err_fcts, err_eb, err_cn, err_df, true);
+fullFCTS()
+# fullEB()
+# fullCN()
+# fullDF()
+
+# composeErrors(err_fcts, err_eb, err_cn, err_df, true);
 

@@ -49,6 +49,11 @@
 
 \usepackage{subcaption}
 
+\usepackage{hyperref}
+
+\usepackage[headsepline]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+
 %----------------------------------------------------------------------------------------
 %	MARGINS
 %----------------------------------------------------------------------------------------

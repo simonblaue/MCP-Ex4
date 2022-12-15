@@ -35,6 +35,7 @@
 
 \maketitle % Insert the title, author and date using the information specified above
 
+\vspace*{40px}
 
 \begin{tabular}{l r}
 	Universität Göttingen \\ % Date the experiment was performed
@@ -49,10 +50,15 @@
 %	Abstract text
 %\end{abstract}
 
-\vspace*{50px}
+\newpage
 %----------------------------------------------------------------------------------------
 %	CONTENT
 %----------------------------------------------------------------------------------------
+% \headtopline
+% \headsepline
+
+\ohead{\pagemark}
+\automark{subsection}
 
 \section{Laplace Equation}
 
@@ -138,51 +144,51 @@ As I increse the number of terms more and more sine functions are added left and
 
 \section{Diffusion}
 
-% \subsection{Integration methods}
+In this task I implemented four different method for solving the diffusion equation. To varyfiy they all converged to the same solution I plotted a time evolution of all of them. The time domain is in the y-axis, the rod domain in the x-axis, displayed in \autoref{fig:comp_diff_integ}. As expected, th rod cools down, but holds the qualitative temperature profile.
 
-% \begin{figure}[H]
-% 	\centering
-% 	\begin{subfigure}[b]{0.49\textwidth}
-% 		\includegraphics[width=\textwidth]{../saves_t2/rod_FTCS.pdf}
-% 	\end{subfigure}
-% 	\hfill
-% 	\begin{subfigure}[b]{0.49\textwidth}
-% 		\includegraphics[width=\textwidth]{../saves_t2/rod_crank-nic.pdf}
-% 	\end{subfigure}
-% 	\hfill
-% 	\begin{subfigure}[b]{0.49\textwidth}
-% 		\includegraphics[width=\textwidth]{../saves_t2/rod_crank-nic.pdf}
-% 	\end{subfigure}
-% 	\hfill
-% 	\begin{subfigure}[b]{0.49\textwidth}
-% 		\includegraphics[width=\textwidth]{../saves_t2/rod_dufort_frankel.pdf}
-% 	\end{subfigure}
-% 	\hfill
-% 	\caption{Temporal evolution of the rod's temperature along the y-axis. The evolution seems to be the same for all four integration methods.}
-% \end{figure}
+\subsection{Integration methods}
 
-% \subsection{Error comparison}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.49\textwidth}
+		\includegraphics[width=\textwidth]{../saves_t2/rod_FTCS.pdf}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.49\textwidth}
+		\includegraphics[width=\textwidth]{../saves_t2/rod_euler_back.pdf}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.49\textwidth}
+		\includegraphics[width=\textwidth]{../saves_t2/rod_crank_nic.pdf}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.49\textwidth}
+		\includegraphics[width=\textwidth]{../saves_t2/rod_dufort_frankel.pdf}
+	\end{subfigure}
+	\hfill
+	\caption{Temporal evolution of the rod's temperature along the y-axis. The evolution seems to be the same for all four integration methods.}
+	\label{fig:comp_diff_integ}
+\end{figure}
 
-% \begin{figure}[H]
-% 	\centering
-% 	\includegraphics[width=\textwidth]{../saves_t2/error_comp.pdf}
-% 	\caption{}
-% \end{figure}
+\subsection{Error comparison}
+
+To investigate the stabiliy of the different method, I plotted the error against the analytical soluution for different timestep widths. I expect unconditionall stability for the implicit methods Euler Backwards and Crank-Nicelson and the Dufort-Frankel method. The FCTS method is not unconditionally stable and should result in a huge error at some large enough $\Delta t$, depending on $\Delta x$ ($\Delta x = 0.01$). This can be observed in \autoref{fig:fcts-err}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../saves_t2/error_development_fcts.pdf}
+	\caption{Error development for the FCTS method}
+	\label{fig:fcts-err}
+\end{figure}
 
 
-% \begin{figure}[H]
-% 	\centering
-% 	\includegraphics[width=\textwidth]{../saves_t2/error_comp_be_cn.pdf}
-% 	\caption{}
-% \end{figure}
+For comparing the other erros I will cut off the instbaility of the FCTS scheme at an error of $\epsilon = 0.007$. I observe that the other schemes seem stable in the tested regime, however all of them have a relatively high error. An intersting result is that the error for the implicit methods is the same, while  the Dufort-Frankel error is approximatly twice as large.
 
-
-% TODO: Dufort Franke not so nice
-% \begin{figure}[H]
-% 	\centering
-% 	\includegraphics[width=\textwidth]{../saves_t2/error_comp_be_cn_df.pdf}
-% 	\caption{}
-% \end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../saves_t2/error_comp_diffusion.pdf}
+	\caption{Error comparison for the different methods}
+\end{figure}
 
 
 \section{Solitons}
