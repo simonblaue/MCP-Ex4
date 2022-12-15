@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  15 DEC 2022 13:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  15 DEC 2022 13:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1048,7 +1048,7 @@ File: ../saves_t2/error_comp_diffusion.pdf Graphic file (type pdf)
 <use ../saves_t2/error_comp_diffusion.pdf>
 Package pdftex.def Info: ../saves_t2/error_comp_diffusion.pdf  used on input line 189.
 (pdftex.def)             Requested size: 327.2067pt x 218.14844pt.
- [8 <../saves_t2/error_development_fcts.pdf> <../saves_t2/error_comp_diffusion.pdf>] (./template.aux)
+ [8 <../saves_t2/error_development_fcts.pdf> <../saves_t2/error_comp_diffusion.pdf>] [9] (./template.aux)
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: F8BC06195301A4EF04D4287F1DAF204E;1023.
 Package logreq Info: Writing requests to 'template.run.xml'.
@@ -1056,18 +1056,18 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28841 strings out of 474968
- 577064 string characters out of 5776083
+ 28842 strings out of 474968
+ 577070 string characters out of 5776083
  1328914 words of memory out of 5000000
  49956 multiletter control sequences out of 15000+600000
  566819 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  138i,20n,134p,771b,909s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_yelf2i.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Slanted.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathRM.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on template.pdf (8 pages, 2942593 bytes).
+Output written on template.pdf (9 pages, 2943033 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
- 27 named destinations out of 1000 (max. 500000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 266 compressed objects within 3 object streams
+ 28 named destinations out of 1000 (max. 500000)
  140 words of extra memory for PDF output out of 10000 (max. 10000000)
 
