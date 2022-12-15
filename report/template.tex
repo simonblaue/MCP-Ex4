@@ -23,10 +23,10 @@
 %	REPORT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Report 4: Partial Differnetial Equations (PDEs)} % Report title
+\title{Report 4: Partial Differential Equations (PDEs)} % Report title
+\subtitle{Git: https://github.com/simonblaue/MCP-Ex4.git}
 
 \author{Simon \textsc{Blaue}} % Author name(s), add additional authors like: '\& James \textsc{Smith}'
-% \subtitle{ddsd}
 
 
 \date{\today} % Date of the report
@@ -74,7 +74,7 @@ First lets check which method converges the fastest:
 	\caption{Number of steps until convergence concerning the Laplace error $\max\epsilon<1\times 10^{-3}$.}
 \end{figure}
 
-I observe that Gausß-Seidel and SOR wit $\alpha=1.0$ need the same timestep as expected. The fastest method is SOR with  $\alpha=1.75$, because with $\alpha=1.99$ we get to close to unstable regimes. Obivoulsly SOR with $\alpha=0.5$ takes the longest, as the updating step is damped with the factor $\alpha$. Now I will observe the evolution of the maximal error and the average error of the different methods.
+I observe that Gauß-Seidel and SOR wit $\alpha=1.0$ need the same time step as expected. The fastest method is SOR with  $\alpha=1.75$, because with $\alpha=1.99$ we get to close to unstable regimes. Obviously SOR with $\alpha=0.5$ takes the longest, as the updating step is damped with the factor $\alpha$. Now I will observe the evolution of the maximal error and the average error of the different methods.
 
 \begin{figure}[H]
 	\centering
@@ -94,16 +94,16 @@ I observe that Gausß-Seidel and SOR wit $\alpha=1.0$ need the same timestep as 
 \end{figure}
 
 As discussed before, SOR with $\alpha=1.0$ and Gauß-Seidel method are the same, hence I plotted only the latter. The error development for all methods besides SOR with$\alpha\geq 1.5$ seem qualitatively the same. However for higher $\alpha$ I observe indents in the curve, which seems to boost the algorithm. This is due to the algorithm taking bigger steps in the right direction once it found this direction. 
-For $\alpha=1.99$ the curve is very rigid, and I was not sure, if it realy converged to the right solution, hence I plotted the result below. As it turns out the method also converges to the expected result.
+For $\alpha=1.99$ the curve is very rigid, and I was not sure, if it is relay converged to the right solution, hence I plotted the result below. As it turns out the method also converges to the expected result.
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{../saves_t1/sor199_heatmap.pdf}
-	\caption{Domain after iterating with the SOR 1.99 method to varify right convergence.}
+	\caption{Domain after iterating with the SOR 1.99 method to verify right convergence.}
 \end{figure}
 
 \subsection{SOR}
 
-The natural question to ask is what happens for an even further boosted SOR method? I found that for $\alpha = 2.0$ the algorithm does not converge in  50000 steps. It seems that it would not have converged to the right domain, as the result shows stripes and the maximal error starts to fluctuate a lot after 100 timesteps. The system can not recover from that.
+The natural question to ask is what happens for an even further boosted SOR method? I found that for $\alpha = 2.0$ the algorithm does not converge in  50000 steps. It seems that it would not have converged to the right domain, as the result shows stripes and the maximal error starts to fluctuate a lot after 100 time steps. The system can not recover from that.
 
 \begin{figure}[H]
 	\centering
@@ -126,7 +126,7 @@ Now I will cross verify the iterative solution with an aproximated analytical so
 	\caption{Results for the "infinite" sum solution to the Laplace equation for different numbers of terms $n$.}
 \end{figure}
 
-As I increse the number of terms more and more sine functions are added left and right to the first one, and towards the top an exponential decay fills in. Comparing the "infinite" sum solution for 1000 terms with the Gauß-Seidel method reveals that the exponential decay is to weak, or the Gauß-Seidel method did not propergate long enough. Substracting both results displays that at the edges the solutions are identical (yellow) in the top they do not fit together as the iterative solution did not propergate that far.
+As I increase the number of terms more and more sine functions are added left and right to the first one, and towards the top an exponential decay fills in. Comparing the "infinite" sum solution for 1000 terms with the Gauß-Seidel method reveals that the exponential decay is to weak, or the Gauß-Seidel method did not propagate long enough. Subtracting both results displays that at the edges the solutions are identical (yellow) in the top they do not fit together as the iterative solution did not propergate that far.
 
 \begin{figure}[H]
 	\centering

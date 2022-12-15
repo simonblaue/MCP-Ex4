@@ -1224,6 +1224,7 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmss.fd
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecss1095.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecsx1095.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecsx2074.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecsx1200.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/xcharter/XCharter-Roman-tlf-t1.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/xcharter/OT1XCharter-TLF.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/xcharter/OT1XCharter-TLF.fd
@@ -1299,7 +1300,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/xcharter/XCharter-Roma
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/xcharter/XCharter-Roman-tlf-t1.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/xcharter/XCharter-Roman-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecsx1440.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecsx1200.tfm
 INPUT ../saves_t1/number_of_convergence_steps.pdf
 INPUT ../saves_t1/number_of_convergence_steps.pdf
 INPUT ../saves_t1/number_of_convergence_steps.pdf

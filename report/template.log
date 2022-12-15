@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  15 DEC 2022 22:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  15 DEC 2022 22:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1091,17 +1091,17 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/sl' will be
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 1: subsection
-<../saves_t1/number_of_convergence_steps.pdf, id=13, 527.08919pt x 376.52669pt>
+<../saves_t1/number_of_convergence_steps.pdf, id=14, 527.08919pt x 376.52669pt>
 File: ../saves_t1/number_of_convergence_steps.pdf Graphic file (type pdf)
 <use ../saves_t1/number_of_convergence_steps.pdf>
 Package pdftex.def Info: ../saves_t1/number_of_convergence_steps.pdf  used on input line 73.
 (pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
-<../saves_t1/av_errors_comp.pdf, id=14, 527.08919pt x 376.52669pt>
+<../saves_t1/av_errors_comp.pdf, id=15, 527.08919pt x 376.52669pt>
 File: ../saves_t1/av_errors_comp.pdf Graphic file (type pdf)
 <use ../saves_t1/av_errors_comp.pdf>
 Package pdftex.def Info: ../saves_t1/av_errors_comp.pdf  used on input line 83.
 (pdftex.def)             Requested size: 160.33307pt x 114.53308pt.
-<../saves_t1/max_errors_comp.pdf, id=15, 527.08919pt x 376.52669pt>
+<../saves_t1/max_errors_comp.pdf, id=16, 527.08919pt x 376.52669pt>
 File: ../saves_t1/max_errors_comp.pdf Graphic file (type pdf)
 <use ../saves_t1/max_errors_comp.pdf>
 Package pdftex.def Info: ../saves_t1/max_errors_comp.pdf  used on input line 89.
@@ -1199,13 +1199,13 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 Here is how much of TeX's memory you used:
  32655 strings out of 474968
  668873 string characters out of 5776083
- 1543786 words of memory out of 5000000
+ 1543832 words of memory out of 5000000
  53731 multiletter control sequences out of 15000+600000
  542019 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,19n,120p,10694b,910s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_yelf2i.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Slanted.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathRM.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on template.pdf (8 pages, 2899492 bytes).
+Output written on template.pdf (8 pages, 2903599 bytes).
 PDF statistics:
  376 PDF objects out of 1000 (max. 8388607)
  262 compressed objects within 3 object streams
