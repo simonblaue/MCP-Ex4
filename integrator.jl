@@ -118,20 +118,38 @@ function FCTS(T0, Δt, Δx, λ, Nₜ, Nₓ)
     T_old = copy(T) 
     for j in 2:length(T)-1
       T[j] = (1-2*a)*T_old[j] + a*(T_old[j-1]+T_old[j+1])
-      # T[j] = (1-2*a)*T[j] + a*(T[j-1]+T[j+1])  
     end
     Teval[:,i+1] = copy(T)
   end
   return Teval'
 end;
 
-function euler_backward(T0, A, Nₜ, Nₓ)
-  A⁻¹ = inv(A)
+
+function euler_backward(T0, A, Nₜ)
+  A⁻¹ = sparse(inv(A))
   T = A⁻¹^Nₜ * T0
   return T
 end;
 
-function crank_nicolson(T0, A, B, Nₜ, Nₓ)
+function euler_backward_all(T0, A, Nₜ, Nₓ)
+  A⁻¹ = sparse(inv(A))
+  T = zeros(Nₓ, Nₜ+1)
+  T[:,1] = copy(T0)
+  for i in 1:Nₜ
+      T[:,i+1] = A⁻¹ * vec(T[:,i])
+  end
+  return T'
+end;
+
+
+function crank_nicolson(T0, A, B, Nₜ)
+  A⁻¹ = sparse(inv(A))
+  B = sparse(B)
+  T = (A⁻¹*B)^Nₜ * T0
+  return T
+end;
+
+function crank_nicolson_all(T0, A, B, Nₜ, Nₓ)
   A⁻¹ = inv(A)
   T = zeros(Nₓ, Nₜ+1)
   T[:,1] = copy(T0)
@@ -147,6 +165,8 @@ function dufort_frankel(T0,a, Nₜ, Nₓ)
   T[:,2] = copy(T0)
   A = Diagonal([(1-a)/(1+a) for _ in 1:Nₓ])
   B = Tridiagonal([a/(1+a) for _ in 1:Nₓ-1], [0. for _ in 1:Nₓ], [a/(1+a) for _ in 1:Nₓ-1])
+  A = sparse(A)
+  B = sparse(B)
   for i in 2:Nₜ
     T[:,i+1] = A*T[:,i-1] + B * T[:,i]
   end
@@ -159,13 +179,6 @@ function T_exact(x,t, L,K,C,ρ)
   return sin((π*x)/L)*exp(-(π^2*K*t)/(L^2*C*ρ))
 end;
 
-
-function ϵ_T(Teval,t, Δx, Δt, L,K,C,ρ)
-  Nₓ = floor(Int,L/Δx)
-  T = (x,t) -> Teval[floor(Int,t/Δt),floor(Int,x/Δx)]
-  summe = sum([abs(T(j*Δx,t) - T_exact(j*Δx,t,L,K,C,ρ)) for j in 1:Nₓ-1])
-  return 1/Nₓ * summe
-end;
 
 function betterϵ(T, t, xs, L,K,C,ρ)
   Nₓ = length(xs)
