@@ -117,7 +117,7 @@ function FCTS(T0, Δt, Δx, λ, Nₜ, Nₓ)
   for i in 1:Nₜ
     T_old = copy(T) 
     for j in 2:length(T)-1
-      T[j] = (1-2*a)*T_old[j] + a*(T_old[j-1]+T[j+1])
+      T[j] = (1-2*a)*T_old[j] + a*(T_old[j-1]+T_old[j+1])
       # T[j] = (1-2*a)*T[j] + a*(T[j-1]+T[j+1])  
     end
     Teval[:,i+1] = copy(T)
@@ -127,12 +127,8 @@ end;
 
 function euler_backward(T0, A, Nₜ, Nₓ)
   A⁻¹ = inv(A)
-  T = zeros(Nₓ, Nₜ+1)
-  T[:,1] = copy(T0)
-  for i in 1:Nₜ
-      T[:,i+1] = A⁻¹ * vec(T[:,i])
-  end
-  return T'
+  T = A⁻¹^Nₜ * T0
+  return T
 end;
 
 function crank_nicolson(T0, A, B, Nₜ, Nₓ)
@@ -170,3 +166,9 @@ function ϵ_T(Teval,t, Δx, Δt, L,K,C,ρ)
   summe = sum([abs(T(j*Δx,t) - T_exact(j*Δx,t,L,K,C,ρ)) for j in 1:Nₓ-1])
   return 1/Nₓ * summe
 end;
+
+function betterϵ(T, t, xs, L,K,C,ρ)
+  Nₓ = length(xs)
+  error = mean(abs.(T - T_exact.(xs, t, L,K,C,ρ)))
+  return error
+end
