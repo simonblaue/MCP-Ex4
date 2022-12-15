@@ -25,7 +25,7 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}} % Pass through any extra options specified to the base class
 \ProcessOptions\relax % Process class options
 
-\LoadClass{article} % Load the base class
+\LoadClass{scrartcl} % Load the base class
 
 %----------------------------------------------------------------------------------------
 %	REQUIRED PACKAGES AND MISC CONFIGURATIONS

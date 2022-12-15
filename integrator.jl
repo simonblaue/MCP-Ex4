@@ -125,7 +125,7 @@ function FCTS(T0, Δt, Δx, λ, Nₜ, Nₓ)
 end;
 
 
-function euler_backward(T0, A, Nₜ)
+function euler_backward((T0, A, Nₜ))
   A⁻¹ = sparse(inv(A))
   T = A⁻¹^Nₜ * T0
   return T
@@ -165,10 +165,19 @@ function dufort_frankel(T0,a, Nₜ, Nₓ)
   T[:,2] = copy(T0)
   A = Diagonal([(1-a)/(1+a) for _ in 1:Nₓ])
   B = Tridiagonal([a/(1+a) for _ in 1:Nₓ-1], [0. for _ in 1:Nₓ], [a/(1+a) for _ in 1:Nₓ-1])
+  A[1,2] = 0;
+  A[1,1] = 1;
+  A[end,end] = 1
+  A[end,end-1] = 0
+  B[1,2] = 0;
+  B[1,1] = 1;
+  B[end,end] = 1
+  B[end,end-1] = 0
   A = sparse(A)
   B = sparse(B)
+
   for i in 2:Nₜ
-    T[:,i+1] = A*T[:,i-1] + B * T[:,i]
+    T[:,i+1] = A*T[:,i] + B * T[:,i]
   end
   return T'
 end;
@@ -181,7 +190,65 @@ end;
 
 
 function betterϵ(T, t, xs, L,K,C,ρ)
-  Nₓ = length(xs)
+
   error = mean(abs.(T - T_exact.(xs, t, L,K,C,ρ)))
   return error
+end
+
+
+
+###### Tims stuff
+
+function DuFortFrankel(T₀, Nₜ, λ, Δt, Δx)
+  T = copy(T₀)
+  T_old = copy(T₀)
+  a = 2λ * Δt / Δx^2
+  N = length(T)
+
+  for _ in 1:Nₜ
+      T_older = T_old
+      T_old = T
+      T = (1 - a)/(1 + a) * T_older
+
+      for i in 2:N-1
+          T[i] += a/(1 + a) * (T_old[i+1] + T_old[i-1])
+      end
+  end
+
+  return T
+end
+
+
+
+
+function CrankNicolson(T₀, Nₜ, λ, Δt, Δx)
+  T = copy(T₀)
+  a = λ * Δt / 2Δx^2
+  N = length(T)
+  
+  A = Tridiagonal(
+      fill(-a, N - 1),
+      fill(1 + 2a, N),
+      fill(-a, N - 1)
+  )
+
+  A[1, 1] = 1
+  A[1, 2] = 0
+  A[N, N] = 1
+  A[N, N-1] = 0
+
+  A⁻¹ = inv(A)
+
+  B = Tridiagonal(
+      fill(a, N - 1),
+      fill(1 - 2a, N),
+      fill(a, N - 1)
+  )
+
+  B[1, 1] = 1
+  B[1, 2] = 0
+  B[N, N] = 1
+  B[N, N-1] = 0
+
+  return (A⁻¹ * B)^Nₜ * T
 end
