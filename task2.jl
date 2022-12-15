@@ -241,7 +241,7 @@ function getEBparams(t, λ, Δt, Δx)
 end
 
 
-function errorDev(Integrator, Integrator_params, disp=false)
+function errorDev(Integrator, Integrator_params,name, disp=false)
     ϵ_Ts = Any[]
     res = 0
     Threads.@threads for Δt in Δts
@@ -256,10 +256,10 @@ function errorDev(Integrator, Integrator_params, disp=false)
     end
 
     error_plot = plot(Δts, ϵ_Ts, legend=false)
-    title!("Error development for Dufort-Frankel scheme")
+    title!("Error development for $name scheme")
     xlabel!("Time resolution Δt")
     ylabel!("Error ϵ(t=100)")
-    savefig(string(save_folder,"/error_development_df.pdf"))
+    savefig(string(save_folder,"/error_development_$name.pdf"))
 
     if disp
         display(error_plot)
@@ -276,7 +276,7 @@ d=true
 # # @time err_cn_tim = errorDevCNTim(d);
 # @time err_df = errorDevDF(d);
 
-err_eb = errorDev(euler_backward, getEBparams, true)
+err_eb = errorDev(euler_backward, getEBparams,"Euler-Backward" ,true)
 
 
 
