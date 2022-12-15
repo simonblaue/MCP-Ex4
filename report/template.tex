@@ -58,78 +58,77 @@
 
 \subsection{Iterator methods}
 
+First lets check which method converges the fastest:
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{../saves/number_of_convergence_steps.pdf}
+	\includegraphics[width=\textwidth]{../saves_t1/number_of_convergence_steps.pdf}
 	\caption{Number of steps until convergence concerning the Laplace error $\max\epsilon<1\times 10^{-3}$.}
 \end{figure}
 
+I observe that Gausß-Seidel and SOR wit $\alpha=1.0$ need the same timestep as expected. The fastest method is SOR with  $\alpha=1.75$, because with $\alpha=1.99$ we get to close to unstable regimes. Obivoulsly SOR with $\alpha=0.5$ takes the longest, as the updating step is damped with the factor $\alpha$. Now I will observe the evolution of the maximal error and the average error of the different methods.
 
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}[b]{0.49\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{../saves/av_errors_comp.pdf}
-
+			\includegraphics[width=\textwidth]{../saves_t1/av_errors_comp.pdf}
 			\label{fig:av_errors}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.49\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{../saves/av_errors_SOR_comp.pdf}
-
-			\label{fig:av_errors_SOR}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.49\textwidth}
-			\centering
-			\includegraphics[width=\textwidth]{../saves/max_errors_comp.pdf}
-
+			\includegraphics[width=\textwidth]{../saves_t1/max_errors_comp.pdf}
 			\label{fig:max_errors}
 	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.49\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{../saves/max_errors_SOR_comp.pdf}
+	\caption{Maximal and average error for different iteration methods.}
+	\label{fig:errors}
+\end{figure}
 
-		\label{fig:max_errors_SOR}
-\end{subfigure}
-		 \caption{Maximal and average error for different iteration methods.}
-		 \label{fig:errors}
+As discussed before, SOR with $\alpha=1.0$ and Gauß-Seidel method are the same, hence I plotted only the latter. The error development for all methods besides SOR with$\alpha\geq 1.5$ seem qualitatively the same. However for higher $\alpha$ I observe indents in the curve, which seem to boost the algorithm. This is due to the algorithm taking bigger steps in the right direction once it found this direction. 
+For $\alpha=1.99$ the curve is very rigid, and I was not sure, if it realy converged to the right solution, hence I plotted the result below. As it turns out the method also converges to the expected result.
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{../saves_t1/sor199_heatmap.pdf}
+	\caption{Domain after iterating with the SOR 1.99 method to varify right convergence.}
 \end{figure}
 
 \subsection{SOR for $\alpha=2.0$}
 
+The natural question to ask is what happens for an even further boosted SOR method? I found that for $\alpha = 2.0$ the algorithm does not converge in  50000 steps. It seems that it would not have converged to the right domain, as the result shows stripes and the maximal error starts to fluctuate a lot after 100 timesteps. The system can not recover from that.
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{../saves/broken_SOR_heatmap.pdf}
-	\caption{}
+	\includegraphics[width=0.9\textwidth]{../saves_t1/broken_SOR_heatmap.pdf}
+	% \caption{}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{../saves/broken_SOR_error.pdf}
-	\caption{}
+	\includegraphics[width=0.9\textwidth]{../saves_t1/broken_SOR_error.pdf}
+	% \caption{}
 \end{figure}
 
 \subsection{Infinite sum solution}
 
+Now I will cross verify the iterative solution with an aproximated analytical solution. First have a look at the analytical "infinite" sum solution for different numbers of summands. 
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{../saves/comp_lapplace_series_heatmap.pdf}
+	\includegraphics[width=\textwidth]{../saves_t1/comp_lapplace_series_heatmap.pdf}
 	\caption{Results for the "infinite" sum solution to the Laplace equation for different numbers of terms $n$.}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}[b]{\textwidth}
-		\includegraphics[width=\textwidth]{../saves/comp_laplace_heatmap.pdf}
+		\includegraphics[width=\textwidth]{../saves_t1/comp_laplace_heatmap.pdf}
 		\caption{Comparison of the infinite sum solution with 1000 terms and the Gauß Seidel iterator solution.}
 	\end{subfigure}
 	\hfill
 	\centering
 	\begin{subfigure}[b]{0.6\textwidth}
-		\includegraphics[width=\textwidth]{../saves/difference_laplace_heatmap.pdf}
+		\includegraphics[width=\textwidth]{../saves_t1/difference_laplace_heatmap.pdf}
 		\caption{Difference between the infinite sum solution with 1000 terms and the Gauß Seidel iterator solution.}
 	\end{subfigure}
 \end{figure}
@@ -137,51 +136,51 @@
 
 \section{Diffusion}
 
-\subsection{Integration methods}
+% \subsection{Integration methods}
 
-\begin{figure}[H]
-	\centering
-	\begin{subfigure}[b]{0.49\textwidth}
-		\includegraphics[width=\textwidth]{../saves_t2/rod_FTCS.pdf}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.49\textwidth}
-		\includegraphics[width=\textwidth]{../saves_t2/rod_crank-nic.pdf}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.49\textwidth}
-		\includegraphics[width=\textwidth]{../saves_t2/rod_crank-nic.pdf}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.49\textwidth}
-		\includegraphics[width=\textwidth]{../saves_t2/rod_dufort_frankel.pdf}
-	\end{subfigure}
-	\hfill
-	\caption{Temporal evolution of the rod's temperature along the y-axis. The evolution seems to be the same for all four integration methods.}
-\end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\begin{subfigure}[b]{0.49\textwidth}
+% 		\includegraphics[width=\textwidth]{../saves_t2/rod_FTCS.pdf}
+% 	\end{subfigure}
+% 	\hfill
+% 	\begin{subfigure}[b]{0.49\textwidth}
+% 		\includegraphics[width=\textwidth]{../saves_t2/rod_crank-nic.pdf}
+% 	\end{subfigure}
+% 	\hfill
+% 	\begin{subfigure}[b]{0.49\textwidth}
+% 		\includegraphics[width=\textwidth]{../saves_t2/rod_crank-nic.pdf}
+% 	\end{subfigure}
+% 	\hfill
+% 	\begin{subfigure}[b]{0.49\textwidth}
+% 		\includegraphics[width=\textwidth]{../saves_t2/rod_dufort_frankel.pdf}
+% 	\end{subfigure}
+% 	\hfill
+% 	\caption{Temporal evolution of the rod's temperature along the y-axis. The evolution seems to be the same for all four integration methods.}
+% \end{figure}
 
-\subsection{Error comparison}
+% \subsection{Error comparison}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{../saves_t2/error_comp.pdf}
-	\caption{}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{../saves_t2/error_comp_be_cn.pdf}
-	\caption{}
-\end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\includegraphics[width=\textwidth]{../saves_t2/error_comp.pdf}
+% 	\caption{}
+% \end{figure}
 
 
-TODO: Dufort Franke not so nice
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{../saves_t2/error_comp_be_cn_df.pdf}
-	\caption{}
-\end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\includegraphics[width=\textwidth]{../saves_t2/error_comp_be_cn.pdf}
+% 	\caption{}
+% \end{figure}
+
+
+% TODO: Dufort Franke not so nice
+% \begin{figure}[H]
+% 	\centering
+% 	\includegraphics[width=\textwidth]{../saves_t2/error_comp_be_cn_df.pdf}
+% 	\caption{}
+% \end{figure}
 
 
 \section{Solitons}
