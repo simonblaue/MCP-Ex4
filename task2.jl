@@ -44,6 +44,9 @@ function fullEB()
 
     A =Tridiagonal([-a for _ in 1:Nₓ-1], [(1+2*a) for _ in 1:Nₓ], [-a for _ in 1:Nₓ-1])
     A[1,2] = 0;
+    A[1,1] = 1;
+    A[end,end-1] = 0;
+    A[end,end] = 1;
 
     Teval = euler_backward_all(T0, A ,Nₜ, Nₓ);
     hmap_ftcs = heatmap(xs, ts.*Δt, Teval, ylabel="Time",xlabel="Rod domain", title="Rod evolution with Euler Backward")
@@ -56,8 +59,10 @@ function fullCN()
     a = λ*Δt/(2*Δx^2)
     A =Tridiagonal([-a for _ in 1:Nₓ-1], [(1+2*a) for _ in 1:Nₓ], [-a for _ in 1:Nₓ-1])
     A[1,2] = 0;
+    A[1,1] = 1;
     B =Tridiagonal([a for _ in 1:Nₓ-1], [(1-2*a) for _ in 1:Nₓ], [a for _ in 1:Nₓ-1])
     B[1,2] = 0;
+    B[1,1] = 1;
     Teval = crank_nicolson_all(T0, A, B, Nₜ, Nₓ);
     hmap_ftcs = heatmap(xs, ts.*Δt, Teval, ylabel="Time",xlabel="Rod domain", title="Rod evolution with Crank-Nicolson")
     savefig(save_folder*"/rod_crank_nic.pdf")
@@ -78,7 +83,6 @@ function errorDevFCTS(disp=false)
 
     ϵ_Ts = Float64[]
     res = 0
-    # Δts = 0.0001:0.0005:0.6
     Threads.@threads for Δt in Δts
         Nₜ = floor(Int,t/Δt+2)
         T_all = FCTS(T0, Δt, Δx, λ, Nₜ, Nₓ);
@@ -89,6 +93,8 @@ function errorDevFCTS(disp=false)
 
     error_plot = plot(Δts, ϵ_Ts, legend=false)
     title!("Error development for FCTS scheme")
+    ylims!((0,0.001))
+    xlims!((0,0.7))
     xlabel!("Time resolution Δt")
     ylabel!("Error ϵ(t=100)")
     savefig(string(save_folder,"/error_development_fcts.pdf"))
@@ -208,13 +214,14 @@ function composeErrors(fctsErr, ebErr, cnErr, dfErr, disp=false)
     
 end
 
-# d=false
-# @time err_fcts = errorDevFCTS(d);
+# d=true
+@time err_fcts = errorDevFCTS(d);
 # @time err_eb = errorDevEB(d);
 # @time err_cn = errorDevCN(d);
 # @time err_df = errorDevDF(d);
 
-fullFCTS()
+# u = fullFCTS()
+# display(plot(xs, u[end,:]))
 # fullEB()
 # fullCN()
 # fullDF()
