@@ -9,7 +9,7 @@ theme(:wong;)
 include("integrator.jl")
 
 ## Initialize
-Δl = 0.005
+Δl = 0.01
 l = 1
 
 xs = 0:Δl:l
@@ -87,12 +87,14 @@ function task1b(ϕ₀)
    savefig(string(save_folder, "/number_of_convergence_steps.pdf"))
 
    # Difference plot
+   series_1000 = [laplace_inf_sum(x,y,l,1000) for x in xs, y in ys]
    iterative_heatmap = heatmap(xs,ys, x_gs, title="After Gauß Seidel Iteration")
-   series_heatmap_1000 = heatmap(xs, ys, [laplace_inf_sum(x,y,l,1000) for x in xs, y in ys], title="Infinite sum with n=1000")
-   difference = x_gs-[laplace_inf_sum(x,y,l,1000) for x in xs, y in ys]
+   series_heatmap_1000 = heatmap(xs, ys, series_1000, title="Infinite sum with n=1000")
+   difference = x_gs-series_1000
    difference_heatmap = heatmap(xs,ys, difference, title="Difference", clims=(minimum(difference),maximum(difference[2:end,2:end])))
    savefig(string(save_folder, "/difference_laplace_heatmap.pdf"))
-
+   display(x_gs[:,50])
+   display(series_1000[:,50])
    # heatmap comp
    plot(iterative_heatmap, series_heatmap_1000, layout=grid(1,2, widths=(4/8,4/8)), size=(800,300))
    savefig(string(save_folder, "/comp_laplace_heatmap.pdf"))
