@@ -5,7 +5,7 @@ using PlotThemes
 
 using LinearAlgebra
 using SparseArrays
-
+gr();
 # plotlyjs();
 theme(:vibrant;)
 
@@ -17,13 +17,13 @@ include("task3Matricies.jl")
 const ϵ = 0.2
 const μ = 0.1
 const Δx = 0.4
-const Δt = 0.1
+const Δt = 0.05
 const L = 52
 
 const xs = 0:Δx:L
 
 const Nₓ = length(xs) 
-const Nₜ = 2000
+const Nₜ = 10000
 
 const t_end = Δt*Nₜ
 
@@ -42,7 +42,7 @@ function getCollidingSoliton(xs)
     return u₁
 end
 
-function firstStep(u₁, ϵ, μ, Δt, Δx,Nₓ)
+function firstStep(u₁, ϵ, μ, Δt, Δx,Nₓ,boundarys)
     pref1 = ϵ/6 * Δt/Δx
     pref2 = μ/2 * Δt/Δx^3
 
@@ -51,8 +51,8 @@ function firstStep(u₁, ϵ, μ, Δt, Δx,Nₓ)
         u₂[j] = u₁[j] - pref1 * (u₁[j+1]+u₁[j]+u₁[j-1]) * (u₁[j+1]-u₁[j-1] ) - pref2 * (u₁[j+2]+2*u₁[j-1]-2*u₁[j+1]-u₁[j-2])
     end
     
-    u₂[1] = 1
-    u₂[end] = 0
+    u₂[1] = boundarys[1]
+    u₂[end] = boundarys[end]
     u₂[2] = u₁[2] - pref1 * (u₁[3]+u₁[2]+u₁[1]) * (u₁[3]-u₁[1] ) - pref2 * (u₁[4]+2*u₁[1]-2*u₁[3]-u₁[1])
     u₂[end-1] = u₁[end-1] - pref1 * (u₁[end]+u₁[end-1]+u₁[end-2]) * (u₁[end]-u₁[end-2] ) - pref2 * (u₁[end]+2*u₁[end-2]-2*u₁[end]-u₁[end-3])
 
@@ -60,7 +60,7 @@ function firstStep(u₁, ϵ, μ, Δt, Δx,Nₓ)
 end
 
 
-function loopstep(uᵢ₋₁,uᵢ, ϵ, μ, Δt, Δx, Nₓ)
+function loopstep(uᵢ₋₁,uᵢ, ϵ, μ, Δt, Δx, Nₓ, boundarys)
 
     pref1 = ϵ/3 * Δt/Δx
     pref2 = μ * Δt/Δx^3
@@ -70,24 +70,24 @@ function loopstep(uᵢ₋₁,uᵢ, ϵ, μ, Δt, Δx, Nₓ)
         uᵢ₊₁[j] = uᵢ₋₁[j] - pref1 * (uᵢ[j+1]+uᵢ[j]+uᵢ[j-1]) * (uᵢ[j+1]-uᵢ[j-1] ) - pref2 * (uᵢ[j+2]+2*uᵢ[j-1]-2*uᵢ[j+1]-uᵢ[j-2])
     end
     
-    uᵢ₊₁[1] = 1
-    uᵢ₊₁[end] = 0
+    uᵢ₊₁[1] = boundarys[1]
+    uᵢ₊₁[end] = boundarys[end]
     uᵢ₊₁[2] = uᵢ₋₁[2] - pref1 * (uᵢ[3]+uᵢ[2]+uᵢ[1]) * (uᵢ[3]-uᵢ[1] ) - pref2 * (uᵢ[4]+2*uᵢ[1]-2*uᵢ[3]-uᵢ[1])
     uᵢ₊₁[end-1] = uᵢ₋₁[end-1] - pref1 * (uᵢ[end]+uᵢ[end-1]+uᵢ[end-2]) * (uᵢ[end]-uᵢ[end-2] ) - pref2 * (uᵢ[end]+2*uᵢ[end-2]-2*uᵢ[end]-uᵢ[end-3])
 
     return  uᵢ₊₁
 end
 
-function iterative(u₁)
+function iterative(u₁, boundarys=[1.,0.])
     
     u = zeros(Nₜ, Nₓ)
 
     u[1,:] = u₁
-    u[2,:] = firstStep(u[1,:], ϵ, μ, Δt, Δx,Nₓ)
+    u[2,:] = firstStep(u[1,:], ϵ, μ, Δt, Δx,Nₓ,boundarys)
 
     ### evolution of u
     for i in 2:Nₜ-1
-       u[i+1,:] = loopstep(u[i-1,:],u[i,:], ϵ, μ, Δt, Δx, Nₓ)
+       u[i+1,:] = loopstep(u[i-1,:],u[i,:], ϵ, μ, Δt, Δx, Nₓ,boundarys)
     end;
 
     #####
@@ -127,7 +127,7 @@ end
 # @time u= analytical(L ,t_end)
 u₁ = getCollidingSoliton(xs)
 
-@time u = iterative(u₁)
+@time u = iterative(u₁,[0.,0.])
 
 # @time u = iterativeMatricies(Nₜ, Nₓ, xs, ϵ, μ, Δt, Δx);
 
