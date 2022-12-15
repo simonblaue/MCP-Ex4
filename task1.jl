@@ -63,7 +63,7 @@ function task1b(ϕ₀)
    labels = ["Jacobi" "Gauss-Seidel" "SOR 0.5" "SOR 1.25" "SOR 1.5" "SOR 1.75" "SOR 1.99"]
    plot(data, xlim=(0,100), label=labels, title="Maximal error vs step", xaxis=:log, yaxis=:log, xticks=([1, 10, 100, 1000, 10000], [1, 10, 100, 1000, 10000]))
    xlabel!("Step")
-   ylable!("Maximal error")
+   ylabel!("Maximal error")
    savefig(string(save_folder, "/max_errors_comp.pdf"))
 
    # Plot av error
@@ -71,7 +71,7 @@ function task1b(ϕ₀)
    labels = ["Jacobi" "Gauß Seidel" "SOR 0.5" "SOR 1.0" "SOR 1.25" "SOR 1.5" "SOR 1.75" "SOR 1.99"]
    plot(data, xlim=(0,400), label=labels, title="Average error vs step", xaxis=:log, yaxis=:log, xticks=([1, 10, 100, 1000, 10000], [1, 10, 100, 1000, 10000]))
    xlabel!("Step")
-   ylable!("Average error")
+   ylabel!("Average error")
    savefig(string(save_folder, "/av_errors_comp.pdf"))
 
    #Plot SOR 1.99 heatmap
@@ -83,7 +83,7 @@ function task1b(ϕ₀)
    labels = ["Jacobi", "Gauß Seidel", "SOR 0.5", "SOR 1.0", "SOR 1.25", "SOR 1.5", "SOR 1.75", "SOR 1.99"]
    scatter(labels,data, title="Number of steps until convergence", legend=false)
    xlabel!("Method")
-   ylable!("Steps until convergence")
+   ylabel!("Steps until convergence")
    savefig(string(save_folder, "/number_of_convergence_steps.pdf"))
 
    # Difference plot

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  15 DEC 2022 11:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  15 DEC 2022 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -834,49 +834,49 @@ Package pdftex.def Info: ../saves_t1/number_of_convergence_steps.pdf  used on in
  [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../saves_t1/number_of_convergence_steps.pdf>]
-<../saves_t1/av_errors_comp.pdf, id=33, 527.08919pt x 376.52669pt>
+<../saves_t1/av_errors_comp.pdf, id=38, 527.08919pt x 376.52669pt>
 File: ../saves_t1/av_errors_comp.pdf Graphic file (type pdf)
 <use ../saves_t1/av_errors_comp.pdf>
 Package pdftex.def Info: ../saves_t1/av_errors_comp.pdf  used on input line 75.
 (pdftex.def)             Requested size: 160.33307pt x 114.53308pt.
-<../saves_t1/max_errors_comp.pdf, id=34, 527.08919pt x 376.52669pt>
+<../saves_t1/max_errors_comp.pdf, id=39, 527.08919pt x 376.52669pt>
 File: ../saves_t1/max_errors_comp.pdf Graphic file (type pdf)
 <use ../saves_t1/max_errors_comp.pdf>
 Package pdftex.def Info: ../saves_t1/max_errors_comp.pdf  used on input line 81.
 (pdftex.def)             Requested size: 160.33307pt x 114.53308pt.
-<../saves_t1/sor199_heatmap.pdf, id=35, 527.08919pt x 376.52669pt>
+<../saves_t1/sor199_heatmap.pdf, id=40, 527.08919pt x 376.52669pt>
 File: ../saves_t1/sor199_heatmap.pdf Graphic file (type pdf)
 <use ../saves_t1/sor199_heatmap.pdf>
 Package pdftex.def Info: ../saves_t1/sor199_heatmap.pdf  used on input line 92.
 (pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
  [2 <../saves_t1/av_errors_comp.pdf> <../saves_t1/max_errors_comp.pdf> <../saves_t1/sor199_heatmap.pdf>]
-<../saves_t1/broken_SOR_heatmap.pdf, id=91, 527.08919pt x 376.52669pt>
+<../saves_t1/broken_SOR_heatmap.pdf, id=106, 527.08919pt x 376.52669pt>
 File: ../saves_t1/broken_SOR_heatmap.pdf Graphic file (type pdf)
 <use ../saves_t1/broken_SOR_heatmap.pdf>
 Package pdftex.def Info: ../saves_t1/broken_SOR_heatmap.pdf  used on input line 102.
 (pdftex.def)             Requested size: 294.48402pt x 210.3709pt.
-<../saves_t1/broken_SOR_error.pdf, id=92, 527.08919pt x 376.52669pt>
+<../saves_t1/broken_SOR_error.pdf, id=107, 527.08919pt x 376.52669pt>
 File: ../saves_t1/broken_SOR_error.pdf Graphic file (type pdf)
 <use ../saves_t1/broken_SOR_error.pdf>
 Package pdftex.def Info: ../saves_t1/broken_SOR_error.pdf  used on input line 108.
 (pdftex.def)             Requested size: 294.48402pt x 210.3709pt.
-<../saves_t1/comp_lapplace_series_heatmap.pdf, id=93, 527.08919pt x 376.52669pt>
+<../saves_t1/comp_lapplace_series_heatmap.pdf, id=108, 527.08919pt x 376.52669pt>
 File: ../saves_t1/comp_lapplace_series_heatmap.pdf Graphic file (type pdf)
 <use ../saves_t1/comp_lapplace_series_heatmap.pdf>
 Package pdftex.def Info: ../saves_t1/comp_lapplace_series_heatmap.pdf  used on input line 118.
 (pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
  [3 <../saves_t1/broken_SOR_heatmap.pdf> <../saves_t1/broken_SOR_error.pdf>]
-<../saves_t1/comp_laplace_heatmap.pdf, id=138, 527.08919pt x 376.52669pt>
+<../saves_t1/comp_laplace_heatmap.pdf, id=153, 527.08919pt x 376.52669pt>
 File: ../saves_t1/comp_laplace_heatmap.pdf Graphic file (type pdf)
 <use ../saves_t1/comp_laplace_heatmap.pdf>
-Package pdftex.def Info: ../saves_t1/comp_laplace_heatmap.pdf  used on input line 125.
+Package pdftex.def Info: ../saves_t1/comp_laplace_heatmap.pdf  used on input line 127.
 (pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 126.
-<../saves_t1/difference_laplace_heatmap.pdf, id=139, 527.08919pt x 376.52669pt>
+(Font)              scaled to size 8.64006pt on input line 128.
+<../saves_t1/difference_laplace_heatmap.pdf, id=154, 527.08919pt x 376.52669pt>
 File: ../saves_t1/difference_laplace_heatmap.pdf Graphic file (type pdf)
 <use ../saves_t1/difference_laplace_heatmap.pdf>
-Package pdftex.def Info: ../saves_t1/difference_laplace_heatmap.pdf  used on input line 131.
+Package pdftex.def Info: ../saves_t1/difference_laplace_heatmap.pdf  used on input line 133.
 (pdftex.def)             Requested size: 196.326pt x 140.24342pt.
  [4 <../saves_t1/comp_lapplace_series_heatmap.pdf>] [5 <../saves_t1/comp_laplace_heatmap.pdf> <../saves_t1/difference_laplace_heatmap.pdf>] (./template.aux)
 Package logreq Info: Writing requests to 'template.run.xml'.
@@ -892,10 +892,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  86i,8n,91p,771b,850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_yelf2i.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on template.pdf (5 pages, 690231 bytes).
+Output written on template.pdf (5 pages, 725868 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
+ 260 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

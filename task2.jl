@@ -29,11 +29,12 @@ function task2a()
 
     t =  0:Nₜ
     Teval = FCTS(T0, Δt, Δx, λ, Nₜ, Nₓ);
-    hmap_ftcs = heatmap(x, t.*Δt, Teval, ylabel="Time", title="Rod evolution with FTCS")
-    savefig(string(save_folder,"/rod_FTCS.pdf"))
+    hmap_ftcs = heatmap(x, t.*Δt, Teval, ylabel="Time",xlabel="Rod domain", title="Rod evolution with FTCS")
+    savefig(save_folder*"/rod_FTCS.pdf")
 
     t = 100
-    Δts = 0.0001:0.0005:0.7
+    # Δts = 0.0001:0.0005:0.7
+    Δts = 0.6:0.0005:1
     ϵ_Ts = Any[]
     res = 0
 
