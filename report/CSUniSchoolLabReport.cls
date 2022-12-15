@@ -51,6 +51,8 @@
 
 \usepackage{hyperref}
 
+\usepackage{animate}
+
 \usepackage[headsepline]{scrlayer-scrpage}
 \pagestyle{scrheadings}
 

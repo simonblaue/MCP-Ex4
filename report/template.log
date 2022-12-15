@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  15 DEC 2022 21:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  15 DEC 2022 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -439,6 +439,47 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip83
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/animate/animate.sty
+Package: animate 2022/09/15 PDF & SVG animations from files and inline graphics
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/media9/pdfbase.sty
+Package: pdfbase 2022/08/04 v0.55 driver independent access to low-level PDF features
+\g_pbs_page_int=\count310
+\g_pbs_oc_int=\count311
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2022-04-07 v2.34 Module abspage for zref (HO)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2022-04-07 v2.34 Module base for zref (HO)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count312
+Package zref Info: New property: abspage on input line 65.
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/ocgx2/ocgbase.sty
+Package: ocgbase 2022/08/04 v0.22 support package for ocgx2.sty
+\g_ocgbase_nd_int=\count313
+)
+\@anim@box=\box68
+\@anim@measbox=\box69
+\@anim@tmpdima=\dimen178
+\@anim@tmpdimb=\dimen179
+\@anim@num=\count314
+\@anim@curframe=\count315
+\@anim@curframe@zb=\count316
+\@anim@resizeflags=\count317
+\@anim@skipfram=\count318
+\@anim@mulframecnt=\count319
+\@anim@@tmlnfile=\read2
+\@anim@tmpcnt=\count320
+\c@@anim@ltxcnt=\count321
+\@anim@curlayer=\count322
+\@anim@lineno=\count323
+\@anim@curfield=\count324
+\@anim@@resizeflags=\count325
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 Package: scrlayer-scrpage 2022/10/12 v3.38 KOMA-Script package (end user interface for scrlayer)
  (/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrlayer.sty
@@ -452,17 +493,17 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count310
-\Gm@cntv=\count311
-\c@Gm@tempcnt=\count312
-\Gm@bindingoffset=\dimen178
-\Gm@wd@mp=\dimen179
-\Gm@odd@mp=\dimen180
-\Gm@even@mp=\dimen181
-\Gm@layoutwidth=\dimen182
-\Gm@layoutheight=\dimen183
-\Gm@layouthoffset=\dimen184
-\Gm@layoutvoffset=\dimen185
+\Gm@cnth=\count326
+\Gm@cntv=\count327
+\c@Gm@tempcnt=\count328
+\Gm@bindingoffset=\dimen180
+\Gm@wd@mp=\dimen181
+\Gm@odd@mp=\dimen182
+\Gm@even@mp=\dimen183
+\Gm@layoutwidth=\dimen184
+\Gm@layoutheight=\dimen185
+\Gm@layouthoffset=\dimen186
+\Gm@layoutvoffset=\dimen187
 \Gm@dimlist=\toks26
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -478,17 +519,15 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks29
 \XKV@tempa@toks=\toks30
 )
-\XKV@depth=\count313
+\XKV@depth=\count329
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2022/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count314
-\decimalpart=\count315
+\integerpart=\count330
+\decimalpart=\count331
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/carlisle/scalefnt.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
@@ -496,7 +535,7 @@ LaTeX Font Info:    Setting XCharter-LF sub-encoding to TS1/0 on input line 29.
 LaTeX Font Info:    Changing XCharter-TLF sub-encoding to TS1/0 on input line 29.
 LaTeX Font Info:    Setting XCharter-OsF sub-encoding to TS1/0 on input line 29.
 LaTeX Font Info:    Changing XCharter-TOsF sub-encoding to TS1/0 on input line 29.
-\xch@cnt=\count316
+\xch@cnt=\count332
  (/usr/local/texlive/2022/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
@@ -522,13 +561,13 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
-\tx@cntz=\count317
+\tx@cntz=\count333
  (/usr/local/texlive/2022/texmf-dist/tex/generic/kastrup/binhex.tex)
-\tx@Isdigit=\count318
-\tx@IsAlNum=\count319
+\tx@Isdigit=\count334
+\tx@IsAlNum=\count335
 \tx@tA=\toks31
 \tx@tB=\toks32
-\tx@su=\read2
+\tx@su=\read3
 
 amsthm NOT loaded
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 376.
@@ -630,53 +669,53 @@ LaTeX Info: Redefining \not on input line 2959.
 Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
  (/usr/local/texlive/2022/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count320
+\lrq@indent=\count336
  (/usr/local/texlive/2022/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count321
-\c@listtotal=\count322
-\c@listcount=\count323
-\c@liststart=\count324
-\c@liststop=\count325
-\c@citecount=\count326
-\c@citetotal=\count327
-\c@multicitecount=\count328
-\c@multicitetotal=\count329
-\c@instcount=\count330
-\c@maxnames=\count331
-\c@minnames=\count332
-\c@maxitems=\count333
-\c@minitems=\count334
-\c@citecounter=\count335
-\c@maxcitecounter=\count336
-\c@savedcitecounter=\count337
-\c@uniquelist=\count338
-\c@uniquename=\count339
-\c@refsection=\count340
-\c@refsegment=\count341
-\c@maxextratitle=\count342
-\c@maxextratitleyear=\count343
-\c@maxextraname=\count344
-\c@maxextradate=\count345
-\c@maxextraalpha=\count346
-\c@abbrvpenalty=\count347
-\c@highnamepenalty=\count348
-\c@lownamepenalty=\count349
-\c@maxparens=\count350
-\c@parenlevel=\count351
-\blx@tempcnta=\count352
-\blx@tempcntb=\count353
-\blx@tempcntc=\count354
-\c@blx@maxsection=\count355
-\blx@maxsegment@0=\count356
-\blx@notetype=\count357
-\blx@parenlevel@text=\count358
-\blx@parenlevel@foot=\count359
-\blx@sectionciteorder@0=\count360
-\blx@sectionciteorderinternal@0=\count361
-\blx@entrysetcounter=\count362
-\blx@biblioinstance=\count363
+\c@tabx@nest=\count337
+\c@listtotal=\count338
+\c@listcount=\count339
+\c@liststart=\count340
+\c@liststop=\count341
+\c@citecount=\count342
+\c@citetotal=\count343
+\c@multicitecount=\count344
+\c@multicitetotal=\count345
+\c@instcount=\count346
+\c@maxnames=\count347
+\c@minnames=\count348
+\c@maxitems=\count349
+\c@minitems=\count350
+\c@citecounter=\count351
+\c@maxcitecounter=\count352
+\c@savedcitecounter=\count353
+\c@uniquelist=\count354
+\c@uniquename=\count355
+\c@refsection=\count356
+\c@refsegment=\count357
+\c@maxextratitle=\count358
+\c@maxextratitleyear=\count359
+\c@maxextraname=\count360
+\c@maxextradate=\count361
+\c@maxextraalpha=\count362
+\c@abbrvpenalty=\count363
+\c@highnamepenalty=\count364
+\c@lownamepenalty=\count365
+\c@maxparens=\count366
+\c@parenlevel=\count367
+\blx@tempcnta=\count368
+\blx@tempcntb=\count369
+\blx@tempcntc=\count370
+\c@blx@maxsection=\count371
+\blx@maxsegment@0=\count372
+\blx@notetype=\count373
+\blx@parenlevel@text=\count374
+\blx@parenlevel@foot=\count375
+\blx@sectionciteorder@0=\count376
+\blx@sectionciteorderinternal@0=\count377
+\blx@entrysetcounter=\count378
+\blx@biblioinstance=\count379
 \labelnumberwidth=\skip84
 \labelalphawidth=\skip85
 \biblabelsep=\skip86
@@ -685,12 +724,12 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibinitsep=\skip89
 \bibparsep=\skip90
 \bibhang=\skip91
-\blx@bcfin=\read3
+\blx@bcfin=\read4
 \blx@bcfout=\write3
 \blx@langwohyphens=\language87
-\c@mincomprange=\count364
-\c@maxcomprange=\count365
-\c@mincompwidth=\count366
+\c@mincomprange=\count380
+\c@maxcomprange=\count381
+\c@mincompwidth=\count382
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -700,74 +739,74 @@ Package biblatex Info: Trying to load biblatex citestyle data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count367
-\c@savedafterword=\count368
-\c@annotator=\count369
-\c@savedannotator=\count370
-\c@author=\count371
-\c@savedauthor=\count372
-\c@bookauthor=\count373
-\c@savedbookauthor=\count374
-\c@commentator=\count375
-\c@savedcommentator=\count376
-\c@editor=\count377
-\c@savededitor=\count378
-\c@editora=\count379
-\c@savededitora=\count380
-\c@editorb=\count381
-\c@savededitorb=\count382
-\c@editorc=\count383
-\c@savededitorc=\count384
-\c@foreword=\count385
-\c@savedforeword=\count386
-\c@holder=\count387
-\c@savedholder=\count388
-\c@introduction=\count389
-\c@savedintroduction=\count390
-\c@namea=\count391
-\c@savednamea=\count392
-\c@nameb=\count393
-\c@savednameb=\count394
-\c@namec=\count395
-\c@savednamec=\count396
-\c@translator=\count397
-\c@savedtranslator=\count398
-\c@shortauthor=\count399
-\c@savedshortauthor=\count400
-\c@shorteditor=\count401
-\c@savedshorteditor=\count402
-\c@labelname=\count403
-\c@savedlabelname=\count404
-\c@institution=\count405
-\c@savedinstitution=\count406
-\c@lista=\count407
-\c@savedlista=\count408
-\c@listb=\count409
-\c@savedlistb=\count410
-\c@listc=\count411
-\c@savedlistc=\count412
-\c@listd=\count413
-\c@savedlistd=\count414
-\c@liste=\count415
-\c@savedliste=\count416
-\c@listf=\count417
-\c@savedlistf=\count418
-\c@location=\count419
-\c@savedlocation=\count420
-\c@organization=\count421
-\c@savedorganization=\count422
-\c@origlocation=\count423
-\c@savedoriglocation=\count424
-\c@origpublisher=\count425
-\c@savedorigpublisher=\count426
-\c@publisher=\count427
-\c@savedpublisher=\count428
-\c@language=\count429
-\c@savedlanguage=\count430
-\c@origlanguage=\count431
-\c@savedoriglanguage=\count432
-\c@pageref=\count433
-\c@savedpageref=\count434
+\c@afterword=\count383
+\c@savedafterword=\count384
+\c@annotator=\count385
+\c@savedannotator=\count386
+\c@author=\count387
+\c@savedauthor=\count388
+\c@bookauthor=\count389
+\c@savedbookauthor=\count390
+\c@commentator=\count391
+\c@savedcommentator=\count392
+\c@editor=\count393
+\c@savededitor=\count394
+\c@editora=\count395
+\c@savededitora=\count396
+\c@editorb=\count397
+\c@savededitorb=\count398
+\c@editorc=\count399
+\c@savededitorc=\count400
+\c@foreword=\count401
+\c@savedforeword=\count402
+\c@holder=\count403
+\c@savedholder=\count404
+\c@introduction=\count405
+\c@savedintroduction=\count406
+\c@namea=\count407
+\c@savednamea=\count408
+\c@nameb=\count409
+\c@savednameb=\count410
+\c@namec=\count411
+\c@savednamec=\count412
+\c@translator=\count413
+\c@savedtranslator=\count414
+\c@shortauthor=\count415
+\c@savedshortauthor=\count416
+\c@shorteditor=\count417
+\c@savedshorteditor=\count418
+\c@labelname=\count419
+\c@savedlabelname=\count420
+\c@institution=\count421
+\c@savedinstitution=\count422
+\c@lista=\count423
+\c@savedlista=\count424
+\c@listb=\count425
+\c@savedlistb=\count426
+\c@listc=\count427
+\c@savedlistc=\count428
+\c@listd=\count429
+\c@savedlistd=\count430
+\c@liste=\count431
+\c@savedliste=\count432
+\c@listf=\count433
+\c@savedlistf=\count434
+\c@location=\count435
+\c@savedlocation=\count436
+\c@organization=\count437
+\c@savedorganization=\count438
+\c@origlocation=\count439
+\c@savedoriglocation=\count440
+\c@origpublisher=\count441
+\c@savedorigpublisher=\count442
+\c@publisher=\count443
+\c@savedpublisher=\count444
+\c@language=\count445
+\c@savedlanguage=\count446
+\c@origlanguage=\count447
+\c@savedoriglanguage=\count448
+\c@pageref=\count449
+\c@savedpageref=\count450
 \shorthandwidth=\skip92
 \shortjournalwidth=\skip93
 \shortserieswidth=\skip94
@@ -791,19 +830,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
-\c@textcitecount=\count435
-\c@textcitetotal=\count436
-\c@textcitemaxnames=\count437
-\c@biburlbigbreakpenalty=\count438
-\c@biburlbreakpenalty=\count439
-\c@biburlnumpenalty=\count440
-\c@biburlucpenalty=\count441
-\c@biburllcpenalty=\count442
+\c@textcitecount=\count451
+\c@textcitetotal=\count452
+\c@textcitemaxnames=\count453
+\c@biburlbigbreakpenalty=\count454
+\c@biburlbreakpenalty=\count455
+\c@biburlnumpenalty=\count456
+\c@biburlucpenalty=\count457
+\c@biburllcpenalty=\count458
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count443
+\c@smartand=\count459
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -813,8 +852,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count444
-\c@bbx:relatedtotal=\count445
+\c@bbx:relatedcount=\count460
+\c@bbx:relatedtotal=\count461
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -850,8 +889,8 @@ File: T1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T1/XCharter-T
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 10.51207pt on input line 36.
-\@quotelevel=\count446
-\@quotereset=\count447
+\@quotelevel=\count462
+\@quotereset=\count463
  (./template.aux)
 \openout1 = `template.aux'.
 
@@ -904,16 +943,16 @@ Package scrbase Info: activating english \refname on input line 36.
 Package scrbase Info: activating english \indexname on input line 36.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count448
-\scratchdimen=\dimen186
-\scratchbox=\box68
-\nofMPsegments=\count449
-\nofMParguments=\count450
+\scratchcounter=\count464
+\scratchdimen=\dimen188
+\scratchbox=\box70
+\nofMPsegments=\count465
+\nofMParguments=\count466
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count451
-\MPscratchDim=\dimen187
-\MPnumerator=\count452
-\makeMPintoPDFobject=\count453
+\MPscratchCnt=\count467
+\MPscratchDim=\dimen189
+\MPnumerator=\count468
+\makeMPintoPDFobject=\count469
 \everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -956,7 +995,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/usr/local/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count454
+\BKM@id=\count470
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -992,8 +1031,8 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count455
-\c@mv@boldtabular=\count456
+\c@mv@tabular=\count471
+\c@mv@boldtabular=\count472
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -1052,109 +1091,118 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/sl' will be
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 1: subsection
-<../saves_t1/number_of_convergence_steps.pdf, id=12, 527.08919pt x 376.52669pt>
+<../saves_t1/number_of_convergence_steps.pdf, id=13, 527.08919pt x 376.52669pt>
 File: ../saves_t1/number_of_convergence_steps.pdf Graphic file (type pdf)
 <use ../saves_t1/number_of_convergence_steps.pdf>
 Package pdftex.def Info: ../saves_t1/number_of_convergence_steps.pdf  used on input line 73.
 (pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
-<../saves_t1/av_errors_comp.pdf, id=13, 527.08919pt x 376.52669pt>
+<../saves_t1/av_errors_comp.pdf, id=14, 527.08919pt x 376.52669pt>
 File: ../saves_t1/av_errors_comp.pdf Graphic file (type pdf)
 <use ../saves_t1/av_errors_comp.pdf>
 Package pdftex.def Info: ../saves_t1/av_errors_comp.pdf  used on input line 83.
 (pdftex.def)             Requested size: 160.33307pt x 114.53308pt.
-<../saves_t1/max_errors_comp.pdf, id=14, 527.08919pt x 376.52669pt>
+<../saves_t1/max_errors_comp.pdf, id=15, 527.08919pt x 376.52669pt>
 File: ../saves_t1/max_errors_comp.pdf Graphic file (type pdf)
 <use ../saves_t1/max_errors_comp.pdf>
 Package pdftex.def Info: ../saves_t1/max_errors_comp.pdf  used on input line 89.
 (pdftex.def)             Requested size: 160.33307pt x 114.53308pt.
 [2 <../saves_t1/number_of_convergence_steps.pdf> <../saves_t1/av_errors_comp.pdf> <../saves_t1/max_errors_comp.pdf>]
-<../saves_t1/sor199_heatmap.pdf, id=90, 527.08919pt x 376.52669pt>
+<../saves_t1/sor199_heatmap.pdf, id=92, 527.08919pt x 376.52669pt>
 File: ../saves_t1/sor199_heatmap.pdf Graphic file (type pdf)
 <use ../saves_t1/sor199_heatmap.pdf>
 Package pdftex.def Info: ../saves_t1/sor199_heatmap.pdf  used on input line 100.
 (pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
-LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 104.
-LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 8.44806pt on input line 104.
-LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 6.33604pt on input line 104.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 104.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 104.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 104.
-
-<../saves_t1/broken_SOR_heatmap.pdf, id=91, 527.08919pt x 376.52669pt>
+<../saves_t1/broken_SOR_heatmap.pdf, id=93, 527.08919pt x 376.52669pt>
 File: ../saves_t1/broken_SOR_heatmap.pdf Graphic file (type pdf)
 <use ../saves_t1/broken_SOR_heatmap.pdf>
 Package pdftex.def Info: ../saves_t1/broken_SOR_heatmap.pdf  used on input line 110.
 (pdftex.def)             Requested size: 294.48402pt x 210.3709pt.
-[3 <../saves_t1/sor199_heatmap.pdf>]
-<../saves_t1/broken_SOR_error.pdf, id=119, 527.08919pt x 376.52669pt>
+ [3 <../saves_t1/sor199_heatmap.pdf>]
+<../saves_t1/broken_SOR_error.pdf, id=122, 527.08919pt x 376.52669pt>
 File: ../saves_t1/broken_SOR_error.pdf Graphic file (type pdf)
 <use ../saves_t1/broken_SOR_error.pdf>
-Package pdftex.def Info: ../saves_t1/broken_SOR_error.pdf  used on input line 116.
+Package pdftex.def Info: ../saves_t1/broken_SOR_error.pdf  used on input line 115.
 (pdftex.def)             Requested size: 294.48402pt x 210.3709pt.
-<../saves_t1/comp_lapplace_series_heatmap.pdf, id=120, 527.08919pt x 376.52669pt>
+<../saves_t1/comp_lapplace_series_heatmap.pdf, id=123, 527.08919pt x 376.52669pt>
 File: ../saves_t1/comp_lapplace_series_heatmap.pdf Graphic file (type pdf)
 <use ../saves_t1/comp_lapplace_series_heatmap.pdf>
-Package pdftex.def Info: ../saves_t1/comp_lapplace_series_heatmap.pdf  used on input line 126.
+Package pdftex.def Info: ../saves_t1/comp_lapplace_series_heatmap.pdf  used on input line 125.
 (pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
  [4 <../saves_t1/broken_SOR_heatmap.pdf> <../saves_t1/broken_SOR_error.pdf>]
-<../saves_t1/comp_laplace_heatmap.pdf, id=170, 527.08919pt x 376.52669pt>
+<../saves_t1/comp_laplace_heatmap.pdf, id=174, 527.08919pt x 376.52669pt>
 File: ../saves_t1/comp_laplace_heatmap.pdf Graphic file (type pdf)
 <use ../saves_t1/comp_laplace_heatmap.pdf>
-Package pdftex.def Info: ../saves_t1/comp_laplace_heatmap.pdf  used on input line 135.
+Package pdftex.def Info: ../saves_t1/comp_laplace_heatmap.pdf  used on input line 134.
 (pdftex.def)             Requested size: 327.2067pt x 233.74863pt.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 136.
-<../saves_t1/difference_laplace_heatmap.pdf, id=171, 527.08919pt x 376.52669pt>
+(Font)              scaled to size 9.60007pt on input line 135.
+<../saves_t1/difference_laplace_heatmap.pdf, id=175, 527.08919pt x 376.52669pt>
 File: ../saves_t1/difference_laplace_heatmap.pdf Graphic file (type pdf)
 <use ../saves_t1/difference_laplace_heatmap.pdf>
-Package pdftex.def Info: ../saves_t1/difference_laplace_heatmap.pdf  used on input line 141.
+Package pdftex.def Info: ../saves_t1/difference_laplace_heatmap.pdf  used on input line 140.
 (pdftex.def)             Requested size: 196.326pt x 140.24342pt.
  [5 <../saves_t1/comp_lapplace_series_heatmap.pdf>]
-<../saves_t2/rod_FTCS.pdf, id=204, 602.25pt x 401.5pt>
+<../saves_t2/rod_FTCS.pdf, id=209, 602.25pt x 401.5pt>
 File: ../saves_t2/rod_FTCS.pdf Graphic file (type pdf)
 <use ../saves_t2/rod_FTCS.pdf>
-Package pdftex.def Info: ../saves_t2/rod_FTCS.pdf  used on input line 156.
+Package pdftex.def Info: ../saves_t2/rod_FTCS.pdf  used on input line 155.
 (pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
-<../saves_t2/rod_euler_back.pdf, id=205, 602.25pt x 401.5pt>
+<../saves_t2/rod_euler_back.pdf, id=210, 602.25pt x 401.5pt>
 File: ../saves_t2/rod_euler_back.pdf Graphic file (type pdf)
 <use ../saves_t2/rod_euler_back.pdf>
-Package pdftex.def Info: ../saves_t2/rod_euler_back.pdf  used on input line 160.
+Package pdftex.def Info: ../saves_t2/rod_euler_back.pdf  used on input line 159.
 (pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
-<../saves_t2/rod_crank_nic.pdf, id=206, 602.25pt x 401.5pt>
+<../saves_t2/rod_crank_nic.pdf, id=211, 602.25pt x 401.5pt>
 File: ../saves_t2/rod_crank_nic.pdf Graphic file (type pdf)
 <use ../saves_t2/rod_crank_nic.pdf>
-Package pdftex.def Info: ../saves_t2/rod_crank_nic.pdf  used on input line 164.
+Package pdftex.def Info: ../saves_t2/rod_crank_nic.pdf  used on input line 163.
 (pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
-<../saves_t2/rod_dufort_frankel.pdf, id=207, 602.25pt x 401.5pt>
+<../saves_t2/rod_dufort_frankel.pdf, id=212, 602.25pt x 401.5pt>
 File: ../saves_t2/rod_dufort_frankel.pdf Graphic file (type pdf)
 <use ../saves_t2/rod_dufort_frankel.pdf>
-Package pdftex.def Info: ../saves_t2/rod_dufort_frankel.pdf  used on input line 168.
+Package pdftex.def Info: ../saves_t2/rod_dufort_frankel.pdf  used on input line 167.
 (pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
  [6 <../saves_t1/comp_laplace_heatmap.pdf> <../saves_t1/difference_laplace_heatmap.pdf>]
-<../saves_t2/error_development_fcts.pdf, id=259, 602.25pt x 401.5pt>
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 10.51207pt on input line 176.
+
+
+LaTeX Warning: Reference `fig:all_trunc_errors' on page 7 undefined on input line 176.
+
+<../saves_t2/error_development_fcts.pdf, id=265, 602.25pt x 401.5pt>
 File: ../saves_t2/error_development_fcts.pdf Graphic file (type pdf)
 <use ../saves_t2/error_development_fcts.pdf>
-Package pdftex.def Info: ../saves_t2/error_development_fcts.pdf  used on input line 181.
+Package pdftex.def Info: ../saves_t2/error_development_fcts.pdf  used on input line 180.
 (pdftex.def)             Requested size: 294.48402pt x 196.33237pt.
- [7 <../saves_t2/rod_FTCS.pdf> <../saves_t2/rod_euler_back.pdf> <../saves_t2/rod_crank_nic.pdf> <../saves_t2/rod_dufort_frankel.pdf>]
-<../saves_t2/error_comp_diffusion.pdf, id=273, 602.25pt x 401.5pt>
+[7 <../saves_t2/rod_FTCS.pdf> <../saves_t2/rod_euler_back.pdf> <../saves_t2/rod_crank_nic.pdf> <../saves_t2/rod_dufort_frankel.pdf>]
+File: ../saves_t2/error_development_fcts.pdf Graphic file (type pdf)
+<use ../saves_t2/error_development_fcts.pdf>
+Package pdftex.def Info: ../saves_t2/error_development_fcts.pdf  used on input line 188.
+(pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
+<../saves_t2/error_development_eb.pdf, id=281, 602.25pt x 401.5pt>
+File: ../saves_t2/error_development_eb.pdf Graphic file (type pdf)
+<use ../saves_t2/error_development_eb.pdf>
+Package pdftex.def Info: ../saves_t2/error_development_eb.pdf  used on input line 192.
+(pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
+<../saves_t2/error_development_cn.pdf, id=282, 602.25pt x 401.5pt>
+File: ../saves_t2/error_development_cn.pdf Graphic file (type pdf)
+<use ../saves_t2/error_development_cn.pdf>
+Package pdftex.def Info: ../saves_t2/error_development_cn.pdf  used on input line 196.
+(pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
+<../saves_t2/error_development_df.pdf, id=283, 602.25pt x 401.5pt>
+File: ../saves_t2/error_development_df.pdf Graphic file (type pdf)
+<use ../saves_t2/error_development_df.pdf>
+Package pdftex.def Info: ../saves_t2/error_development_df.pdf  used on input line 200.
+(pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
+<../saves_t2/error_comp_diffusion.pdf, id=284, 602.25pt x 401.5pt>
 File: ../saves_t2/error_comp_diffusion.pdf Graphic file (type pdf)
 <use ../saves_t2/error_comp_diffusion.pdf>
-Package pdftex.def Info: ../saves_t2/error_comp_diffusion.pdf  used on input line 191.
+Package pdftex.def Info: ../saves_t2/error_comp_diffusion.pdf  used on input line 209.
 (pdftex.def)             Requested size: 327.2067pt x 218.14844pt.
- [8 <../saves_t2/error_development_fcts.pdf> <../saves_t2/error_comp_diffusion.pdf>] [9] (./template.aux)
+ [8 <../saves_t2/error_development_fcts.pdf> <../saves_t2/error_development_eb.pdf> <../saves_t2/error_development_cn.pdf> <../saves_t2/error_development_df.pdf>] [9 <../saves_t2/error_comp_diffusion.pdf>] (./template.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'template.run.xml'.
@@ -1162,18 +1210,18 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31453 strings out of 474968
- 641919 string characters out of 5776083
- 1501456 words of memory out of 5000000
- 52547 multiletter control sequences out of 15000+600000
- 559612 words of font info for 134 fonts, out of 8000000 for 9000
+ 32661 strings out of 474968
+ 668981 string characters out of 5776083
+ 1543822 words of memory out of 5000000
+ 53733 multiletter control sequences out of 15000+600000
+ 548434 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,19n,120p,10694b,908s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_yelf2i.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Slanted.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathRM.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on template.pdf (9 pages, 2832288 bytes).
+ 122i,19n,120p,10694b,910s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_yelf2i.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Slanted.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathRM.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on template.pdf (9 pages, 2905405 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 254 compressed objects within 3 object streams
- 28 named destinations out of 1000 (max. 500000)
- 140 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 387 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
