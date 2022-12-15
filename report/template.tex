@@ -173,13 +173,14 @@ In this task I implemented four different method for solving the diffusion equat
 
 \subsection{Error comparison}
 
-To investigate the stabiliy of the different method, I plotted the error against the analytical solution for different timestep widths. I expect unconditionall stability for the implicit methods Euler Backwards and Crank-Nicelson and the Dufort-Frankel method. The FCTS method is not unconditionally stable and should result in a huge error at some large enough $\Delta t$, depending on $\Delta x$ ($\Delta x = 0.01$). This can be observed in \autoref{fig:fcts-err}. However also the other methods haev a time step dependent truncation error. I displayed their evolution indevidullay in \autoref{fig:all_trunc_errors}.
+To investigate the stability of the different method, I plotted the error against the analytical solution for different time step widths. I expect unconditionally stability for the implicit methods Euler Backwards and Crank-Nicolson and the Dufort-Frankel method. The FCTS method is not unconditionally stable and should result in a huge error at some large enough $\Delta t$, depending on $\Delta x$ ($\Delta x = 0.01$). However also the other methods haev a time step dependent truncation error. I displayed their evolution individually in \autoref{fig:all_trunc_errors}.
+For comparing the other erros I will cut off the instability of the FCTS scheme at an error of $\epsilon = 0.007$. I observe that the other schemes seem stable in the tested regime.
+
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{../saves_t2/error_development_fcts.pdf}
-	\caption{Error development for the FCTS method}
-	\label{fig:fcts-err}
+	\includegraphics[width=\textwidth]{../saves_t2/error_comp_diffusion.pdf}
+	\caption{Error comparison for the different methods}
 \end{figure}
 
 \begin{figure}[H]
@@ -200,15 +201,13 @@ To investigate the stabiliy of the different method, I plotted the error against
 		\includegraphics[width=\textwidth]{../saves_t2/error_development_df.pdf}
 	\end{subfigure}
 	\hfill
+	\caption{}
+	\label{fig:all_trunc_errors}
 \end{figure}
 
-For comparing the other erros I will cut off the instbaility of the FCTS scheme at an error of $\epsilon = 0.007$. I observe that the other schemes seem stable in the tested regime.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{../saves_t2/error_comp_diffusion.pdf}
-	\caption{Error comparison for the different methods}
-\end{figure}
+
+
 
 
 \section{Solitons}

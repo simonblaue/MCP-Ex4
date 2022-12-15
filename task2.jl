@@ -97,9 +97,7 @@ function errorDevFCTS(disp=false)
     end
 
     error_plot = plot(Δts, ϵ_Ts, legend=false)
-    title!("Error development for FCTS scheme")
-    ylims!((0,0.001))
-    xlims!((0,0.7))
+    title!("Error development for FCTS scheme", yaxis=:log)
     xlabel!("Time resolution Δt")
     ylabel!("Error ϵ(t=100)")
     savefig(string(save_folder,"/error_development_fcts.pdf"))
