@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber template"] 1671202322 "template.bcf" "template.bbl" "template" 1671203272 0
-  "template.bcf" 1671203272 106889 01d33ab5362460ee985679f3761beafe "pdflatex"
+["biber template"] 1671202322 "template.bcf" "template.bbl" "template" 1671203368 0
+  "template.bcf" 1671203368 106889 01d33ab5362460ee985679f3761beafe "pdflatex"
   (generated)
   "template.bbl"
   "template.blg"
   (rewritten before read)
-["pdflatex"] 1671203271 "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" "template.pdf" "template" 1671203272 0
+["pdflatex"] 1671203366 "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" "template.pdf" "template" 1671203368 0
   "../saves_t1/av_errors_comp.pdf" 1671117592 42233 7f9645d7f2bf6925529025c42e504ebb ""
   "../saves_t1/broken_SOR_error.pdf" 1671098617 46593 d8369c6642c819fd73b56bca623db03a ""
   "../saves_t1/broken_SOR_heatmap.pdf" 1671098617 118730 ef76dc9d30f5fba1b523b0b0d8c575a3 ""
@@ -26,7 +26,7 @@
   "../saves_t2/rod_euler_back.pdf" 1671121765 518620 2ef419e4e40839b51be62fbbc3476327 ""
   "../saves_t3/colliding_solitons.pdf" 1671201784 57887 cc0b3e22f869e3eb50ba739d68be4eec ""
   "../saves_t3/one_soliton.pdf" 1671201510 60511 a1e6572e1df17071044515dafb64c674 ""
-  "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" 1671203271 13667 5334f070bfb8ba237230615b8748f429 ""
+  "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" 1671203366 13795 a3ee3dc23f840ad5cf7290bd5af28216 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc" 1645915288 3163 21e525d33df21a14ca1957bee2a40288 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc" 1645915288 3042 89ca0791973606a1e548c92a615cb3e0 ""
@@ -218,11 +218,11 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1670364029 3063377 59dbcd150b7bd1208c74dca8334632c4 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "CSUniSchoolLabReport.cls" 1671190747 3405 1c1f4628a308a3e7ecc9495c859b8b48 ""
-  "template.aux" 1671203272 7667 a4be9a052c5f4a393cccf1fcc98bb445 "pdflatex"
+  "template.aux" 1671203368 7923 7bf517fd02fc45d6f4c2a236a2dafbd2 "pdflatex"
   "template.bbl" 1671202325 466 ee04f40f768daeed26442158e95aba61 "biber template"
-  "template.out" 1671203272 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "template.run.xml" 1671203272 2335 5af8e57be58b3a688eb0696dfbec500e "pdflatex"
-  "template.tex" 1671203271 13667 5334f070bfb8ba237230615b8748f429 ""
+  "template.out" 1671203367 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "template.run.xml" 1671203368 2335 5af8e57be58b3a688eb0696dfbec500e "pdflatex"
+  "template.tex" 1671203366 13795 a3ee3dc23f840ad5cf7290bd5af28216 ""
   (generated)
   "template.aux"
   "template.bcf"
