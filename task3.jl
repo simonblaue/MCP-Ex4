@@ -21,11 +21,14 @@ const Δt = 0.05
 const L = 52
 
 const xs = 0:Δx:L
-
 const Nₓ = length(xs) 
-const Nₜ = 10000
+
+const Nₜ = 2000
+const ts = 0:Δt:Nₜ
 
 const t_end = Δt*Nₜ
+
+const save_folder = "saves_t3/"
 
 ###############
 
@@ -113,7 +116,7 @@ function anim(u,every, name)
     n = size(u_anim)[1]
     anim = @animate for i in 1:n
         t = i*every
-        plot(u_anim[i,:], legend=false)
+        plot(xs, u_anim[i,:], legend=false)
         ylims!(0,2)
         title!(L"t="*"$t")
         xlabel!("x")
@@ -124,14 +127,54 @@ function anim(u,every, name)
 
 end
 
-# @time u= analytical(L ,t_end)
-u₁ = getCollidingSoliton(xs)
+function d3plot(u)
+    plotlyjs()
+    plt = plot(u,st=:surface,camera=(-30,30))
 
-@time u = iterative(u₁,[0.,0.])
+    display(plt)
+end;
+
+function timeEvplot(u, savename,every=250, disp=false)
+    list_plots = Any[]
+    plt = plot(xs, u[1,:], title="Time evolution", label="Timestep 1",xformatter=_->"")
+    push!(list_plots,plt)
+    for i in every+1:every:Nₜ-every
+        plt = plot(xs, u[i,:], label="Timestep $i", xformatter=_->"" )
+        # ylabel!("Disturbance")
+        # title!("Timestep $i")
+        push!(list_plots,plt)
+    end
+    plt = plot(xs, u[Nₜ,:], label="Timestep $Nₜ", xlabel=L"Domain $x$")
+    push!(list_plots,plt)
+
+
+    final_plot = plot(
+        list_plots...,
+        layout = (length(list_plots), 1),
+        size=(600,1200), 
+        ylims=(-0.2,1.35),
+        link=:both,
+        ylabel=L"Disturbance $u$")
+    savefig(save_folder*savename*".pdf")
+    if disp
+        display(final_plot)
+    end
+    # display(p)
+
+end
+
+# @time u= analytical(L ,t_end)
+# u₁ = getCollidingSoliton(xs)
+# @time u = iterative(u₁,[0.,0.])
+
+u₁ = getInitSoliton(xs)
+@time u = iterative(u₁,[1.,0.])
 
 # @time u = iterativeMatricies(Nₜ, Nₓ, xs, ϵ, μ, Δt, Δx);
 
 println("calculated u waiting for animation...")
-anim(u,10, "collidingSoliton");
+anim(u,10, "singleSoliton");
+# d3plot(u)
+# timeEvplot(u, "colliding_solitons",1500, true)
 println("Done ⚡️")
 

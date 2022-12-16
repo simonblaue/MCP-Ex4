@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber template"] 1671193490 "template.bcf" "template.bbl" "template" 1671193495 0
-  "template.bcf" 1671193495 106889 01d33ab5362460ee985679f3761beafe "pdflatex"
+["biber template"] 1671202322 "template.bcf" "template.bbl" "template" 1671202818 0
+  "template.bcf" 1671202818 106889 01d33ab5362460ee985679f3761beafe "pdflatex"
   (generated)
   "template.bbl"
   "template.blg"
   (rewritten before read)
-["pdflatex"] 1671193493 "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" "template.pdf" "template" 1671193495 0
+["pdflatex"] 1671202817 "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" "template.pdf" "template" 1671202818 0
   "../saves_t1/av_errors_comp.pdf" 1671117592 42233 7f9645d7f2bf6925529025c42e504ebb ""
   "../saves_t1/broken_SOR_error.pdf" 1671098617 46593 d8369c6642c819fd73b56bca623db03a ""
   "../saves_t1/broken_SOR_heatmap.pdf" 1671098617 118730 ef76dc9d30f5fba1b523b0b0d8c575a3 ""
@@ -24,7 +24,9 @@
   "../saves_t2/rod_crank_nic.pdf" 1671121767 515209 4cf11c615896c872b41e3270f81df496 ""
   "../saves_t2/rod_dufort_frankel.pdf" 1671135322 538204 1482b2f1c6502e671fdae759e3d51a19 ""
   "../saves_t2/rod_euler_back.pdf" 1671121765 518620 2ef419e4e40839b51be62fbbc3476327 ""
-  "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" 1671193489 12140 e3e17ae023c17ab8845d4c218a11b3d6 ""
+  "../saves_t3/colliding_solitons.pdf" 1671201784 57887 cc0b3e22f869e3eb50ba739d68be4eec ""
+  "../saves_t3/one_soliton.pdf" 1671201510 60511 a1e6572e1df17071044515dafb64c674 ""
+  "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" 1671202817 13667 ef22c1e6f531c64bd50b294c495805d0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc" 1645915288 3163 21e525d33df21a14ca1957bee2a40288 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc" 1645915288 3042 89ca0791973606a1e548c92a615cb3e0 ""
@@ -62,6 +64,7 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/xcharter/XCharterMathRM.tfm" 1569879948 752 99294e8a976501bcea306f2f2fbbc5ed ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/xcharter/zchmi.tfm" 1630614652 3256 de3add8a4865a8db30d819a24f6810dd ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/xcharter/zchmia.tfm" 1617383828 2492 615ae54cf421902490cb6b4b54447fa7 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb" 1215737283 145807 7e6525044e63a61de8529743665d16c8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb" 1215737283 148436 6a185415b8a1b77c58fee2272f3574e2 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb" 1215737283 148301 cb90e68db88ca98c49afbaaab3ac1967 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb" 1215737283 141339 22c9429f415447880a747152395d89a1 ""
@@ -215,11 +218,11 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1670364029 3063377 59dbcd150b7bd1208c74dca8334632c4 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "CSUniSchoolLabReport.cls" 1671190747 3405 1c1f4628a308a3e7ecc9495c859b8b48 ""
-  "template.aux" 1671193495 6161 7cf63c14db07fbe1542f9678e573133e "pdflatex"
-  "template.bbl" 1671193492 466 ee04f40f768daeed26442158e95aba61 "biber template"
-  "template.out" 1671193494 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "template.run.xml" 1671193495 2335 5af8e57be58b3a688eb0696dfbec500e "pdflatex"
-  "template.tex" 1671193489 12140 e3e17ae023c17ab8845d4c218a11b3d6 ""
+  "template.aux" 1671202818 7667 a4be9a052c5f4a393cccf1fcc98bb445 "pdflatex"
+  "template.bbl" 1671202325 466 ee04f40f768daeed26442158e95aba61 "biber template"
+  "template.out" 1671202818 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "template.run.xml" 1671202818 2335 5af8e57be58b3a688eb0696dfbec500e "pdflatex"
+  "template.tex" 1671202817 13667 ef22c1e6f531c64bd50b294c495805d0 ""
   (generated)
   "template.aux"
   "template.bcf"

@@ -219,7 +219,7 @@ For the first space derivative we have
 	\pdv{u}{x} = \frac{u_{j-1}^n-u_{j+1}^n}{2\Delta x}+ \mathscr{O}(\Delta x^2).
 \end{align}
 
-To get the third order space derivative I expand $u(x,t)$ around $(x\pm\Delta x, t)$ and $(x\pm 2\Delta x, t)$. This reads as follows
+To get the third order space derivative I expand $u(x,t)$ around $(x\pm\Delta x, t)$ and $(x\pm 2\Delta x, t)$. With $\pdv{u}{x} = u_x$ this reads as follows
 
 \begin{align*}
 	u(x\pm\Delta x, t) &= u \pm u_{x} \Delta x + u_{xx} \frac{\Delta x^2}{2}\pm u_{xxx} \frac{\Delta x^3}{6} + u_{xxxx}\frac{\Delta x^4}{24} + \mathscr{O}(\Delta x^5) \\
@@ -250,11 +250,33 @@ Now we can put the four terms together to finally get
 \begin{align*}
 	\frac{u_{j}^{n-1}-u_{j}^{n+1}}{2\Delta t} + \epsilon \frac{u_{j-1}^n + u_j^n + u_{j+1}^n}{3} \frac{u_{j-1}^n-u_{j+1}^n}{2\Delta x} + \mu \frac{u_{j+2}^n - 2u_{j+1}^n + 2u_{j-1}^n - u_{j-2}^n}{2 \Delta x^3} = 0 \\
 \end{align*}
+
 \begin{align}
 	u_j^{n+1} = u_j^{n-1} &- \frac{\epsilon}{3} \frac{\Delta t}{\Delta x} [u_{j-1}^n + u_j^n + u_{j+1}^n] [u_{j-1}^n-u_{j+1}^n] 
 	\\ &- \mu \frac{\Delta t}{\Delta x^3} [u_{j+2}^n - 2u_{j+1}^n + 2u_{j-1}^n - u_{j-2}^n]\nonumber
 \end{align}
 
+\subsection{Simulation of solitons}
+
+I did an animation, which can be found in the git \href{https://github.com/simonblaue/MCP-Ex4.git}{repo} in the folder anim. When only plotting every 250th time step I get \autoref{fig:one_solition}. I observe that in this time range 4 solitary waves form. If I run the simulation longer, I get more and more waves. As the new waves are smaler at first, they should move slower as we now from the analytical solution (amplitude $\propto$ velocity). This is hard to observe in this representation, but could hold true. If we focus at time step 1001 and 2000 we can verify that the distance between the first amplitude and the second indeed grew.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\textwidth]{../saves_t3/one_soliton.pdf}
+	\caption{Time evolution beginning with one solitary wave, which splits in multiple.}
+	\label{fig:one_solition}
+\end{figure}
+
+\subsubsection{Colliding solitons}
+
+I again have a simulation of this in mit git \href{https://github.com/simonblaue/MCP-Ex4.git}{repo}. Plotting every 1500th time step is shown in \autoref{fig:colliding_solitons}. We observe that after collision the smaller wave moves suddenly in the same direction as the bigger wave. The bigger waves moves in the same direction as before but slower. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\textwidth]{../saves_t3/colliding_solitons.pdf}
+	\caption{Time evolution of two colliding solitary waves.}
+	\label{fig:colliding_solitons}
+\end{figure}
 
 %----------------------------------------------------------------------------------------
 %	DISCUSSION
