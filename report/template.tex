@@ -208,8 +208,52 @@ For comparing the other erros I will cut off the instability of the FCTS scheme 
 
 \section{Solitons}
 
+\subsection{Numerical method}
+
+We write $u(x,t)\rightarrow u_{j}^n (j\Delta x, n\Delta t) = U_j^n$. For the time derivative we have 
+\begin{align}
+	\pdv{u}{t} = \frac{u_{j-1}^n-u_{j+1}^n}{2\Delta t} + \mathscr{O}(\Delta t^2).
+\end{align}
+For the first space derivative we have
+\begin{align}
+	\pdv{u}{x} = \frac{u_{j-1}^n-u_{j+1}^n}{2\Delta x}+ \mathscr{O}(\Delta x^2).
+\end{align}
+
+To get the third order space derivative I expand $u(x,t)$ around $(x\pm\Delta x, t)$ and $(x\pm 2\Delta x, t)$. This reads as follows
+
+\begin{align*}
+	u(x\pm\Delta x, t) &= u \pm u_{x} \Delta x + u_{xx} \frac{\Delta x^2}{2}\pm u_{xxx} \frac{\Delta x^3}{6} + u_{xxxx}\frac{\Delta x^4}{24} + \mathscr{O}(\Delta x^5) \\
+	u(x\pm 2\Delta x, t) &= u \pm u_{x} 2\Delta x + u_{xx} 2 \Delta x^2\pm u_{xxx} \frac{4\Delta x^3}{3} + u_{xxxx}\frac{2\Delta x^4}{3} + \mathscr{O}(\Delta x^5)
+\end{align*}
+
+Rewrite $u(x\pm\Delta x, t) = u_{j\pm1}^n$ and $u(x\pm2\Delta x, t) = u_{j\pm2}^n$ and calculate
+
+\begin{align*}
+	&\quad u_{j+2}^n - 2u_{j+1}^n + 2u_{j-1}^n - u_{j-2}^n \\ 
+	&=  u + u_{x} 2\Delta x + u_{xx} 2 \Delta x^2+ u_{xxx} \frac{4\Delta x^3}{3} + u_{xxxx}\frac{2\Delta x^4}{3} + \mathscr{O}(\Delta x^5) \\
+	&\quad- 2u - 2u_{x} \Delta x - 2u_{xx} \frac{\Delta x^2}{2}- 2u_{xxx} \frac{\Delta x^3}{6} - 2u_{xxxx}\frac{\Delta x^4}{24} - 2\mathscr{O}(\Delta x^5) \\
+	&\quad + 2u - 2u_{x} \Delta x + 2u_{xx} \frac{\Delta x^2}{2} - 2u_{xxx} \frac{\Delta x^3}{6} + 2u_{xxxx}\frac{\Delta x^4}{24} + 2\mathscr{O}(\Delta x^5) \\
+	&\quad -u + u_{x} 2\Delta x - u_{xx} 2 \Delta x^2+ u_{xxx} \frac{4\Delta x^3}{3} - u_{xxxx}\frac{2\Delta x^4}{3} - \mathscr{O}(\Delta x^5)\\
+	&= 2 u_{xxx} \frac{4}{3} \Delta x^3 - 4 u_{xxx} \frac{1}{6} \Delta x^3 \\
+	&= u_{xxx} \left( \frac{8-2}{3} \Delta x^3  \right) \\
+	&\Leftrightarrow \pdv{^3u}{x^3} = \frac{u_{j+2}^n - 2u_{j+1}^n + 2u_{j-1}^n - u_{j-2}^n}{2 \Delta x^3}
+\end{align*}
 
 
+The first term $u(x,t)$ is approximated by 
+\begin{align*}
+	u(x,t) = \frac{u_{j-1}^n + u_j^n + u_{j+1}^n}{3}
+\end{align*}
+
+Now we can put the four terms together to finally get
+
+\begin{align*}
+	\frac{u_{j}^{n-1}-u_{j}^{n+1}}{2\Delta t} + \epsilon \frac{u_{j-1}^n + u_j^n + u_{j+1}^n}{3} \frac{u_{j-1}^n-u_{j+1}^n}{2\Delta x} + \mu \frac{u_{j+2}^n - 2u_{j+1}^n + 2u_{j-1}^n - u_{j-2}^n}{2 \Delta x^3} = 0 \\
+\end{align*}
+\begin{align}
+	u_j^{n+1} = u_j^{n-1} &- \frac{\epsilon}{3} \frac{\Delta t}{\Delta x} [u_{j-1}^n + u_j^n + u_{j+1}^n] [u_{j-1}^n-u_{j+1}^n] 
+	\\ &- \mu \frac{\Delta t}{\Delta x^3} [u_{j+2}^n - 2u_{j+1}^n + 2u_{j-1}^n - u_{j-2}^n]\nonumber
+\end{align}
 
 
 %----------------------------------------------------------------------------------------
