@@ -74,7 +74,7 @@ First lets check which method converges the fastest:
 	\caption{Number of steps until convergence concerning the Laplace error $\max\epsilon<1\times 10^{-3}$.}
 \end{figure}
 
-I observe that Gauß-Seidel and SOR wit $\alpha=1.0$ need the same time step as expected. The fastest method is SOR with  $\alpha=1.75$, because with $\alpha=1.99$ we get to close to unstable regimes. Obviously SOR with $\alpha=0.5$ takes the longest, as the updating step is damped with the factor $\alpha$. Now I will observe the evolution of the maximal error and the average error of the different methods.
+I observe that Gauß-Seidel and SOR with $\alpha=1.0$ need the same number of time steps as expected. The fastest method is SOR with  $\alpha=1.75$, because with $\alpha=1.99$ we get to close to unstable regimes. Obviously SOR with $\alpha=0.5$ takes the longest, as the updating step is damped with the factor $\alpha$. Now I will observe the evolution of the maximal error and the average error of the different methods.
 
 \begin{figure}[H]
 	\centering
@@ -204,10 +204,6 @@ For comparing the other erros I will cut off the instability of the FCTS scheme 
 	\caption{}
 	\label{fig:all_trunc_errors}
 \end{figure}
-
-
-
-
 
 
 \section{Solitons}

@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber template"] 1671140049 "template.bcf" "template.bbl" "template" 1671140110 0
-  "template.bcf" 1671140110 106889 01d33ab5362460ee985679f3761beafe "pdflatex"
+["biber template"] 1671140049 "template.bcf" "template.bbl" "template" 1671185954 0
+  "template.bcf" 1671185954 106889 01d33ab5362460ee985679f3761beafe "pdflatex"
   (generated)
   "template.bbl"
   "template.blg"
   (rewritten before read)
-["pdflatex"] 1671140109 "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" "template.pdf" "template" 1671140110 0
+["pdflatex"] 1671185952 "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" "template.pdf" "template" 1671185954 0
   "../saves_t1/av_errors_comp.pdf" 1671117592 42233 7f9645d7f2bf6925529025c42e504ebb ""
   "../saves_t1/broken_SOR_error.pdf" 1671098617 46593 d8369c6642c819fd73b56bca623db03a ""
   "../saves_t1/broken_SOR_heatmap.pdf" 1671098617 118730 ef76dc9d30f5fba1b523b0b0d8c575a3 ""
@@ -24,7 +24,7 @@
   "../saves_t2/rod_crank_nic.pdf" 1671121767 515209 4cf11c615896c872b41e3270f81df496 ""
   "../saves_t2/rod_dufort_frankel.pdf" 1671135322 538204 1482b2f1c6502e671fdae759e3d51a19 ""
   "../saves_t2/rod_euler_back.pdf" 1671121765 518620 2ef419e4e40839b51be62fbbc3476327 ""
-  "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" 1671140108 9575 5b506983d2b78a07f6263721bb7d9b35 ""
+  "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" 1671185952 9583 189c4d84d3b570aa426bc1ed79053741 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc" 1645915288 3163 21e525d33df21a14ca1957bee2a40288 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc" 1645915288 3042 89ca0791973606a1e548c92a615cb3e0 ""
@@ -210,11 +210,11 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1670364029 3063377 59dbcd150b7bd1208c74dca8334632c4 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "CSUniSchoolLabReport.cls" 1671139257 3384 17fedcc7ba59a57a0ee21349b8c03b0d ""
-  "template.aux" 1671140110 5786 f00063bee3b98c9aa5e618ae9ef862bc "pdflatex"
+  "template.aux" 1671185954 5786 2bf77cbe4af58b7066a99dd57abf1164 "pdflatex"
   "template.bbl" 1671140051 466 ee04f40f768daeed26442158e95aba61 "biber template"
-  "template.out" 1671140110 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "template.run.xml" 1671140110 2335 5af8e57be58b3a688eb0696dfbec500e "pdflatex"
-  "template.tex" 1671140108 9575 5b506983d2b78a07f6263721bb7d9b35 ""
+  "template.out" 1671185954 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "template.run.xml" 1671185954 2335 5af8e57be58b3a688eb0696dfbec500e "pdflatex"
+  "template.tex" 1671185952 9583 189c4d84d3b570aa426bc1ed79053741 ""
   (generated)
   "template.aux"
   "template.bcf"
