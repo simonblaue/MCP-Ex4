@@ -86,5 +86,5 @@
 \usepackage[
 	backend=biber, % Use the biber backend for compiling the bibliography
 	citestyle=authoryear, % In-text citation style
-	bibstyle=authoryear, % Bibliography style
+	% bibstyle=authoryear, % Bibliography style
 ]{biblatex}

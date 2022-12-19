@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  16 DEC 2022 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  19 DEC 2022 11:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -846,10 +846,10 @@ File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
 \biburllcskip=\muskip21
 \c@smartand=\count459
 )
-Package biblatex Info: Trying to load bibliography style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.bbx' found.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
-File: authoryear.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
@@ -1177,49 +1177,57 @@ File: ../saves_t2/rod_dufort_frankel.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../saves_t2/rod_dufort_frankel.pdf  used on input line 167.
 (pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
  [6 <../saves_t1/comp_laplace_heatmap.pdf> <../saves_t1/difference_laplace_heatmap.pdf>]
-<../saves_t2/error_comp_diffusion.pdf, id=265, 602.25pt x 401.5pt>
+<../saves_t2/error_comp_diffusion.pdf, id=266, 602.25pt x 401.5pt>
 File: ../saves_t2/error_comp_diffusion.pdf Graphic file (type pdf)
 <use ../saves_t2/error_comp_diffusion.pdf>
-Package pdftex.def Info: ../saves_t2/error_comp_diffusion.pdf  used on input line 182.
+Package pdftex.def Info: ../saves_t2/error_comp_diffusion.pdf  used on input line 181.
 (pdftex.def)             Requested size: 327.2067pt x 218.14844pt.
  [7 <../saves_t2/rod_FTCS.pdf> <../saves_t2/rod_euler_back.pdf> <../saves_t2/rod_crank_nic.pdf> <../saves_t2/rod_dufort_frankel.pdf>]
-<../saves_t2/error_development_fcts.pdf, id=280, 602.25pt x 401.5pt>
+<../saves_t2/error_development_fcts.pdf, id=282, 602.25pt x 401.5pt>
 File: ../saves_t2/error_development_fcts.pdf Graphic file (type pdf)
 <use ../saves_t2/error_development_fcts.pdf>
-Package pdftex.def Info: ../saves_t2/error_development_fcts.pdf  used on input line 189.
+Package pdftex.def Info: ../saves_t2/error_development_fcts.pdf  used on input line 188.
 (pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
-<../saves_t2/error_development_eb.pdf, id=281, 602.25pt x 401.5pt>
+<../saves_t2/error_development_eb.pdf, id=283, 602.25pt x 401.5pt>
 File: ../saves_t2/error_development_eb.pdf Graphic file (type pdf)
 <use ../saves_t2/error_development_eb.pdf>
-Package pdftex.def Info: ../saves_t2/error_development_eb.pdf  used on input line 193.
+Package pdftex.def Info: ../saves_t2/error_development_eb.pdf  used on input line 192.
 (pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
-<../saves_t2/error_development_cn.pdf, id=282, 602.25pt x 401.5pt>
+<../saves_t2/error_development_cn.pdf, id=284, 602.25pt x 401.5pt>
 File: ../saves_t2/error_development_cn.pdf Graphic file (type pdf)
 <use ../saves_t2/error_development_cn.pdf>
-Package pdftex.def Info: ../saves_t2/error_development_cn.pdf  used on input line 197.
+Package pdftex.def Info: ../saves_t2/error_development_cn.pdf  used on input line 196.
 (pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
-<../saves_t2/error_development_df.pdf, id=283, 602.25pt x 401.5pt>
+<../saves_t2/error_development_df.pdf, id=285, 602.25pt x 401.5pt>
 File: ../saves_t2/error_development_df.pdf Graphic file (type pdf)
 <use ../saves_t2/error_development_df.pdf>
-Package pdftex.def Info: ../saves_t2/error_development_df.pdf  used on input line 201.
+Package pdftex.def Info: ../saves_t2/error_development_df.pdf  used on input line 200.
 (pdftex.def)             Requested size: 160.33307pt x 106.8871pt.
  [8 <../saves_t2/error_comp_diffusion.pdf> <../saves_t2/error_development_fcts.pdf> <../saves_t2/error_development_eb.pdf> <../saves_t2/error_development_cn.pdf> <../saves_t2/error_development_df.pdf>]
-Overfull \hbox (22.46289pt too wide) detected at line 252
+Overfull \hbox (22.46289pt too wide) detected at line 251
 []
  []
 
 [9]
-<../saves_t3/one_soliton.pdf, id=308, 602.25pt x 1204.5pt>
+<../saves_t3/one_soliton.pdf, id=310, 602.25pt x 1204.5pt>
 File: ../saves_t3/one_soliton.pdf Graphic file (type pdf)
 <use ../saves_t3/one_soliton.pdf>
-Package pdftex.def Info: ../saves_t3/one_soliton.pdf  used on input line 265.
+Package pdftex.def Info: ../saves_t3/one_soliton.pdf  used on input line 264.
 (pdftex.def)             Requested size: 278.12769pt x 556.28223pt.
-<../saves_t3/colliding_solitons.pdf, id=311, 602.25pt x 1204.5pt>
+<../saves_t3/colliding_solitons.pdf, id=313, 602.25pt x 1204.5pt>
 File: ../saves_t3/colliding_solitons.pdf Graphic file (type pdf)
 <use ../saves_t3/colliding_solitons.pdf>
-Package pdftex.def Info: ../saves_t3/colliding_solitons.pdf  used on input line 276.
+Package pdftex.def Info: ../saves_t3/colliding_solitons.pdf  used on input line 275.
 (pdftex.def)             Requested size: 278.12769pt x 556.28223pt.
- [10] [11 <../saves_t3/one_soliton.pdf>] [12 <../saves_t3/colliding_solitons.pdf>] (./template.aux)
+ [10] [11 <../saves_t3/one_soliton.pdf>] [12 <../saves_t3/colliding_solitons.pdf>]
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
+(Font)              scaled to size 10.51207pt on input line 293.
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/sc' will be
+(Font)              scaled to size 10.51207pt on input line 293.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 293.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+) [13] (./template.aux)
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'template.run.xml'.
@@ -1227,18 +1235,18 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33279 strings out of 474968
- 675728 string characters out of 5776083
- 1569820 words of memory out of 5000000
- 54333 multiletter control sequences out of 15000+600000
- 543184 words of font info for 107 fonts, out of 8000000 for 9000
+ 33509 strings out of 474968
+ 680679 string characters out of 5776083
+ 1567482 words of memory out of 5000000
+ 54552 multiletter control sequences out of 15000+600000
+ 556771 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,20n,120p,10694b,918s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_yelf2i.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Slanted.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathRM.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/stxscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on template.pdf (12 pages, 3052157 bytes).
+ 122i,20n,120p,10694b,1502s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_yelf2i.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Slanted.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathRM.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/stxscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on template.pdf (13 pages, 3133476 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
- 314 compressed objects within 4 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 462 PDF objects out of 1000 (max. 8388607)
+ 330 compressed objects within 4 object streams
+ 42 named destinations out of 1000 (max. 500000)
  189 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -103,7 +103,7 @@ For $\alpha=1.99$ the curve is very rigid, and I was not sure, if it is relay co
 
 \subsection{SOR}
 
-The natural question to ask is what happens for an even further boosted SOR method? I found that for $\alpha = 2.0$ the algorithm does not converge in  50000 steps. It seems that it would not have converged to the right domain, as the result shows stripes and the maximal error starts to fluctuate a lot after 100 time steps. The system can not recover from that.
+The natural question to ask is what happens for an even further boosted SOR method? I found that for $\alpha = 2.0$ the algorithm does not converge in  50000 steps. It seems that it would not have converged to the right domain, as the result shows stripes and the maximal error starts to fluctuate a lot after 100 time steps. The system can not recover from this.
 
 \begin{figure}[H]
 	\centering
@@ -145,7 +145,7 @@ As I increase the number of terms more and more sine functions are added left an
 
 \section{Diffusion}
 
-In this task I implemented four different method for solving the diffusion equation. To varyfiy they all converged to the same solution I plotted a time evolution of all of them. The time domain is in the y-axis, the rod domain in the x-axis, displayed in \autoref{fig:comp_diff_integ}. As expected, th rod cools down, but holds the qualitative temperature profile.
+In this task I implemented four different method for solving the diffusion equation. To verify they all converged to the same solution I plotted a time evolution of all of them. The time domain is in the y-axis, the rod domain in the x-axis, displayed in \autoref{fig:comp_diff_integ}. As expected, th rod cools down, but holds the qualitative temperature profile.
 
 \subsection{Integration methods}
 
@@ -173,9 +173,8 @@ In this task I implemented four different method for solving the diffusion equat
 
 \subsection{Error comparison}
 
-To investigate the stability of the different method, I plotted the error against the analytical solution for different time step widths. I expect unconditionally stability for the implicit methods Euler Backwards and Crank-Nicolson and the Dufort-Frankel method. The FCTS method is not unconditionally stable and should result in a huge error at some large enough $\Delta t$, depending on $\Delta x$ ($\Delta x = 0.01$). However also the other methods haev a time step dependent truncation error. I displayed their evolution individually in \autoref{fig:all_trunc_errors}.
-For comparing the other erros I will cut off the instability of the FCTS scheme at an error of $\epsilon = 0.007$. I observe that the other schemes seem stable in the tested regime.
-
+To investigate the stability of the different method, I plotted the error against the analytical solution for different time step widths. I expect unconditionally stability for the implicit methods Euler Backwards, Crank-Nicolson and the Dufort-Frankel method. The FCTS method is not unconditionally stable and should result in a huge error at some large enough $\Delta t$, depending on $\Delta x$ ($\Delta x = 0.01$). However also the other methods have a time step dependent truncation error. I displayed their evolution individually in \autoref{fig:all_trunc_errors}.
+For comparing the other erros I will cut off the instability of the FCTS scheme at an error of $\epsilon = 0.007$. I observe that the other schemes seem stable in the tested regime. In \cite{GBV-1778472117} the error development for Crank-Nicolson is given by order of $\Delta t^2$ for Euler Backwards it is given by $\Delta t$. Unfortunately this is not what I have found with my simulation, perhaps the space resolution is to coarse.
 
 \begin{figure}[H]
 	\centering
@@ -269,7 +268,7 @@ I did an animation, which can be found in the git \href{https://github.com/simon
 
 \subsubsection{Colliding solitons}
 
-I again have a simulation of this in mit git \href{https://github.com/simonblaue/MCP-Ex4.git}{repo}. Plotting every 1500th time step is shown in \autoref{fig:colliding_solitons}. We observe that after collision the smaller wave suddenly moves in the same direction as the bigger wave. The bigger waves moves in the same direction as before but slower. 
+I again have a simulation of this in my git \href{https://github.com/simonblaue/MCP-Ex4.git}{repo}. Plotting every 1500th time step is shown in \autoref{fig:colliding_solitons}. I observe that after collision the smaller wave moves in the same direction as the bigger wave. The bigger waves moves in the same direction as before but slower.
 
 \begin{figure}
 	\centering
@@ -289,8 +288,9 @@ I again have a simulation of this in mit git \href{https://github.com/simonblaue
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
+\newpage
 
-% \printbibliography % Output the bibliography
+\printbibliography % Output the bibliography
 
 %----------------------------------------------------------------------------------------
 
