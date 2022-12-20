@@ -66,7 +66,7 @@
 
 \subsection{Iterator methods}
 
-First lets check which method converges the fastest:
+First, lets check which method converges the fastest:
 
 \begin{figure}[H]
 	\centering
@@ -74,7 +74,7 @@ First lets check which method converges the fastest:
 	\caption{Number of steps until convergence concerning the Laplace error $\max\epsilon<1\times 10^{-3}$.}
 \end{figure}
 
-I observe that Gauß-Seidel and SOR with $\alpha=1.0$ need the same number of time steps as expected. The fastest method is SOR with  $\alpha=1.75$, because with $\alpha=1.99$ we get to close to unstable regimes. Obviously SOR with $\alpha=0.5$ takes the longest, as the updating step is damped with the factor $\alpha$. Now I will observe the evolution of the maximal error and the average error of the different methods.
+I observe that Gauß-Seidel and SOR with $\alpha=1.0$ need the same number of time steps as expected. The fastest method is SOR with  $\alpha=1.75$, because with $\alpha=1.99$ we get too close to unstable regimes. Obviously, SOR with $\alpha=0.5$ takes the longest, as the updating step is damped with the factor $\alpha$. Now, I am going to observe the evolution of the maximal error and the average error of the different methods.
 
 \begin{figure}[H]
 	\centering
@@ -94,7 +94,7 @@ I observe that Gauß-Seidel and SOR with $\alpha=1.0$ need the same number of ti
 \end{figure}
 
 As discussed before, SOR with $\alpha=1.0$ and Gauß-Seidel method are the same, hence I plotted only the latter. The error development for all methods besides SOR with$\alpha\geq 1.5$ seem qualitatively the same. However for higher $\alpha$ I observe indents in the curve, which seems to boost the algorithm. This is due to the algorithm taking bigger steps in the right direction once it found this direction. 
-For $\alpha=1.99$ the curve is very rigid, and I was not sure, if it is relay converged to the right solution, hence I plotted the result below. As it turns out the method also converges to the expected result.
+For $\alpha=1.99$ the curve is very rigid, and I was not sure, if it is really converged to the right solution, hence I plotted the result below. As it turns out the method also converges to the expected result.
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{../saves_t1/sor199_heatmap.pdf}
@@ -255,9 +255,29 @@ Now we can put the four terms together to finally get
 	\\ &- \mu \frac{\Delta t}{\Delta x^3} [u_{j+2}^n - 2u_{j+1}^n + 2u_{j-1}^n - u_{j-2}^n]\nonumber
 \end{align}
 
+\subsection{Stability condition}
+
+The stability condition is given by
+
+\begin{align*}
+	\frac{\Delta t}{\Delta x} \left[\epsilon |u| + 4\frac{\mu}{\Delta x^2} \right] \leq 1
+\end{align*}
+
+This can be rewritten as 
+
+\begin{align*}
+	|u| \leq \frac{1}{\epsilon}\left[ \frac{\Delta x}{\Delta t} - 4\frac{\mu}{\Delta x^2} \right]
+\end{align*}
+
+With $\epsilon=0.2,\quad \mu=0.1,\quad \Delta x = 0.4,\quad \Delta t=0.1$ I get
+
+\begin{align*}
+	|u| \leq 7.5
+\end{align*}
+ 
 \subsection{Simulation of solitons}
 
-I did an animation, which can be found in the git \href{https://github.com/simonblaue/MCP-Ex4.git}{repo} in the folder anim. When only plotting every 250th time step I get \autoref{fig:one_solition}. I observe that in this time range 4 solitary waves form. If I run the simulation longer, I get more and more waves. As the new waves are smaler at first, they should move slower as we now from the analytical solution (amplitude $\propto$ velocity). This is hard to observe in this representation, but could hold true. If we focus at time step 1001 and 2000 we can verify that the distance between the first amplitude and the second indeed grew.
+I did an animation, which can be found in the git \href{https://github.com/simonblaue/MCP-Ex4.git}{repo} in the folder anim. When only plotting every 250th time step I get \autoref{fig:one_solition}. I observe that in this time range 4 solitary waves form. If I run the simulation longer, I get more and more waves. As the new waves are smaller at first, they should move slower as we now from the analytical solution (amplitude $\propto$ velocity). This is hard to observe in this representation, but could hold true. If we focus at time step 1001 and 2000 we can verify that the distance between the first amplitude and the second indeed grew. The stability condition $|u|\leq7.5$ holds true during the simulation time.
 
 \begin{figure}
 	\centering
@@ -268,7 +288,7 @@ I did an animation, which can be found in the git \href{https://github.com/simon
 
 \subsubsection{Colliding solitons}
 
-I again have a simulation of this in my git \href{https://github.com/simonblaue/MCP-Ex4.git}{repo}. Plotting every 1500th time step is shown in \autoref{fig:colliding_solitons}. I observe that after collision the smaller wave moves in the same direction as the bigger wave. The bigger waves moves in the same direction as before but slower.
+I again have a simulation of this in my git \href{https://github.com/simonblaue/MCP-Ex4.git}{repo}. Plotting every 1500th time step is shown in \autoref{fig:colliding_solitons}. I observe that after collision the smaller wave moves in the same direction as the bigger wave. The bigger waves moves in the same direction as before but slower. The stability condition $|u|\leq7.5$ holds true during the simulation time.
 
 \begin{figure}
 	\centering

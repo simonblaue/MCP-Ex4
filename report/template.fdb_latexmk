@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber template"] 1671443498 "template.bcf" "template.bbl" "template" 1671444032 0
+["biber template"] 1671538063 "template.bcf" "template.bbl" "template" 1671538296 0
   "sample.bib" 1671443095 585 0516fd050b326bb0c72df1a01ed0cc89 ""
-  "template.bcf" 1671444032 107250 9db454854daa0d1f52e52d42f12cb98d "pdflatex"
+  "template.bcf" 1671538296 107250 9db454854daa0d1f52e52d42f12cb98d "pdflatex"
   (generated)
   "template.bbl"
   "template.blg"
   (rewritten before read)
-["pdflatex"] 1671444030 "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" "template.pdf" "template" 1671444032 0
+["pdflatex"] 1671538295 "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" "template.pdf" "template" 1671538296 0
   "../saves_t1/av_errors_comp.pdf" 1671117592 42233 7f9645d7f2bf6925529025c42e504ebb ""
   "../saves_t1/broken_SOR_error.pdf" 1671098617 46593 d8369c6642c819fd73b56bca623db03a ""
   "../saves_t1/broken_SOR_heatmap.pdf" 1671098617 118730 ef76dc9d30f5fba1b523b0b0d8c575a3 ""
@@ -16,18 +16,18 @@
   "../saves_t1/max_errors_comp.pdf" 1671117592 44804 ca5af991324816edafa9925b18db73fc ""
   "../saves_t1/number_of_convergence_steps.pdf" 1671117592 45164 0c826773c4fd618fb8dfe0c008fbf5af ""
   "../saves_t1/sor199_heatmap.pdf" 1671117592 68812 676fe2b6b17084e13adaea9a002b26f6 ""
-  "../saves_t2/error_comp_diffusion.pdf" 1671139641 41555 900a3665d3fe53c6c22193c119f1c7eb ""
-  "../saves_t2/error_development_cn.pdf" 1671139640 24811 a039553cb15dac9f55d3168e320dd187 ""
-  "../saves_t2/error_development_df.pdf" 1671139641 21962 a19f5990c40f5a4a232f79294a0d8148 ""
-  "../saves_t2/error_development_eb.pdf" 1671139626 24279 cb5dec1d5f9d8056826ab8403593953d ""
-  "../saves_t2/error_development_fcts.pdf" 1671139613 18843 7ad7427253df8893f5ce6f421d3942e5 ""
+  "../saves_t2/error_comp_diffusion.pdf" 1671460170 41679 fc23e4b8c0e565c4afb05eedb2959342 ""
+  "../saves_t2/error_development_cn.pdf" 1671460168 25172 248ebbb258167e844f8e138feeac7bed ""
+  "../saves_t2/error_development_df.pdf" 1671460169 21962 760205fc09d4ed24e8b4f1030bc67e1b ""
+  "../saves_t2/error_development_eb.pdf" 1671460155 24279 685d2d840990188d23fa5e22befffe05 ""
+  "../saves_t2/error_development_fcts.pdf" 1671460142 18843 7f9c79fb941da48e370a1b72a11b9b3a ""
   "../saves_t2/rod_FTCS.pdf" 1671121763 517383 60b9769534dbfba5b4f52e8f6f7c97ac ""
   "../saves_t2/rod_crank_nic.pdf" 1671121767 515209 4cf11c615896c872b41e3270f81df496 ""
   "../saves_t2/rod_dufort_frankel.pdf" 1671135322 538204 1482b2f1c6502e671fdae759e3d51a19 ""
   "../saves_t2/rod_euler_back.pdf" 1671121765 518620 2ef419e4e40839b51be62fbbc3476327 ""
   "../saves_t3/colliding_solitons.pdf" 1671201784 57887 cc0b3e22f869e3eb50ba739d68be4eec ""
   "../saves_t3/one_soliton.pdf" 1671201510 60511 a1e6572e1df17071044515dafb64c674 ""
-  "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" 1671444030 14039 ee727f87be203fc9fabc7be43961cdb2 ""
+  "/Users/simonblaue/ownCloud/Master/Methods for Computaional Physics/Exercises/Ex4/report/template.tex" 1671538294 14667 a559e8630280d41bba5d9a815cef073e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc" 1645915288 3163 21e525d33df21a14ca1957bee2a40288 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc" 1645915288 3042 89ca0791973606a1e548c92a615cb3e0 ""
@@ -226,11 +226,11 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1670364029 3063377 59dbcd150b7bd1208c74dca8334632c4 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "CSUniSchoolLabReport.cls" 1671443518 3407 2cc2d7d606ef08e6dd653c31a7b5bc59 ""
-  "template.aux" 1671444032 8065 b0a69533aa91e149cc1c73bfccbf355e "pdflatex"
-  "template.bbl" 1671443501 2552 a3cbfdade5fea61fff21d67dd824567f "biber template"
-  "template.out" 1671444031 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "template.run.xml" 1671444032 2332 2130e353927ebf2d73228e278c221ed1 "pdflatex"
-  "template.tex" 1671444030 14039 ee727f87be203fc9fabc7be43961cdb2 ""
+  "template.aux" 1671538296 8474 1b722695f98735ea0a1d66667e14b7b6 "pdflatex"
+  "template.bbl" 1671538066 2552 a3cbfdade5fea61fff21d67dd824567f "biber template"
+  "template.out" 1671538296 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "template.run.xml" 1671538296 2332 2130e353927ebf2d73228e278c221ed1 "pdflatex"
+  "template.tex" 1671538294 14667 a559e8630280d41bba5d9a815cef073e ""
   (generated)
   "template.aux"
   "template.bcf"

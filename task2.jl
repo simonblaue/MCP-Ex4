@@ -147,9 +147,9 @@ function errorDevCN(disp=false)
     Threads.@threads for Δt in Δts
         # Nₜ = floor(Int,t/Δt)
         # aray creation
-
-        ts = 0:Δt:t
-        Nₜ = length(ts)
+        # ts = 0:Δt:t
+        Nₜ = floor(Int,t/Δt+2)
+        # Nₜ = length(ts)
 
         a = λ*Δt/(2*Δx^2)
         A =Tridiagonal([-a for _ in 1:Nₓ-1], [(1+2*a) for _ in 1:Nₓ], [-a for _ in 1:Nₓ-1])
@@ -230,13 +230,13 @@ end
 
 
 
-# d=true
-@time err_fcts = errorDevFCTS(d);
-@time err_eb = errorDevEB(d);
-@time err_cn = errorDevCN(d);
-@time err_df = errorDevDF(d);
+d=true
+# @time err_fcts = errorDevFCTS(d);
+# @time err_eb = errorDevEB(d);
+# @time err_cn = errorDevCN(d);
+# @time err_df = errorDevDF(d);
 
-
+minimum(err_fcts)
 
 # fullFCTS()
 # fullEB()
@@ -244,6 +244,6 @@ end
 # fullDF()
 
 # display(plot(Δts, err_cn))
-composeErrors(err_fcts, err_eb, err_cn, err_df, true);
+# composeErrors(err_fcts, err_eb, err_cn, err_df, true);
 
 
